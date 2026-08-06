@@ -36,7 +36,9 @@ Address: `Av. Carneiro Leão, 563 - Zona 01<br>Maringá / PR - 87014-010`.
 
 `blog/index.html` lists posts with `.post-card`; each post is its own `blog/<slug>.html` using `.post` for the prose. No dates, no author byline, no tags: the source posts carry none. Post pages end with a "Continue lendo" block linking the other posts, then the shared CTA.
 
-To add a post: create `blog/<slug>.html` from an existing one, add a `.post-card` to `blog/index.html`, add the cross-links in the other posts' "Continue lendo", and add the URL to `sitemap.xml`.
+To add a post: create `blog/<slug>.html` from an existing one, add a `.post-card` to `blog/index.html`, point two existing posts' "Continue lendo" at it, and add the URL to `sitemap.xml`. Each post links to exactly **two** related posts, never the whole catalogue.
+
+15 posts, 400 to 600 words each. Every market figure carries its source in the body (CENP, Kantar Ibope, Nielsen, Central de Outdoor, ABA, IVC). Claims about mechanics come from `../urbanview-app/docs`: when a fact changes there, the post changes here.
 
 The three current posts kept the slugs of the previous OohMG blog so the old URLs stay redirectable, but the text was rewritten in the UrbanView voice: editorial, sourced, no hype. `anunciar-em-midia-ooh-de-asas-a-sua-marca` keeps its slug under the new title "Como planejar uma campanha em mídia OOH".
 
