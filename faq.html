@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Perguntas frequentes sobre o UrbanView: cobertura, bi-semana, importação de inventário, trava de overbooking e como funciona a demonstração.">
+  <link rel="canonical" href="https://urbanview.media/faq.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="UrbanView">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://urbanview.media/faq.html">
+  <meta property="og:title" content="Perguntas frequentes - UrbanView">
+  <meta property="og:description" content="Perguntas frequentes sobre o UrbanView: cobertura, bi-semana, importação de inventário, trava de overbooking e como funciona a demonstração.">
+  <meta property="og:image" content="https://urbanview.media/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Perguntas frequentes - UrbanView">
+  <meta name="twitter:description" content="Perguntas frequentes sobre o UrbanView: cobertura, bi-semana, importação de inventário, trava de overbooking e como funciona a demonstração.">
+  <meta name="twitter:image" content="https://urbanview.media/assets/og-image.png">
+  <title>Perguntas frequentes - UrbanView</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="assets/site.webmanifest">
+  <meta name="theme-color" content="#FF7902">
+  <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preload" href="assets/fonts/wotfard-regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/fonts/wotfard-bold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="assets/brand.css">
+  <script>
+    tailwind.config = { theme: { extend: { fontFamily: { sans: ['Wotfard','Inter','system-ui','-apple-system','sans-serif'] } } } }
+  </script>
+</head>
+<body class="font-sans antialiased">
+
+  <!-- Nav -->
+  <nav class="sticky top-0 z-50 bg-[#FAFAFA] border-b border-[#E5E5E5]">
+    <div class="max-w-5xl mx-auto px-4 md:px-8 h-14 flex items-center justify-between">
+      <a href="index.html"><img src="assets/urbanview.png" alt="UrbanView" class="h-6 w-auto" width="1305" height="160"></a>
+      <div class="flex items-center gap-4 md:gap-7">
+        <a href="produto.html" class="hidden md:block text-sm text-[#111111] hover:opacity-50 transition-opacity">Produto</a>
+        <a href="mercado.html" class="hidden md:block text-sm text-[#111111] hover:opacity-50 transition-opacity">Mercado</a>
+        <a href="blog/" class="hidden md:block text-sm text-[#111111] hover:opacity-50 transition-opacity">Blog</a>
+        <a href="sobre.html" class="hidden md:block text-sm text-[#111111] hover:opacity-50 transition-opacity">Sobre</a>
+        <button id="nav-toggle" class="md:hidden p-1" aria-label="Abrir menu" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="3" width="20" height="2" rx="1" fill="#111111"/>
+            <rect y="9" width="20" height="2" rx="1" fill="#111111"/>
+            <rect y="15" width="20" height="2" rx="1" fill="#111111"/>
+          </svg>
+        </button>
+        <a href="mailto:contato@urbanview.media?subject=UrbanView - Solicitar demonstração" class="text-sm bg-[#FF7902] text-white px-4 py-1.5 rounded-[6px] hover:bg-[#D96500] transition-colors font-medium whitespace-nowrap">Solicitar demonstração</a>
+      </div>
+    </div>
+    <div id="nav-menu" class="hidden md:hidden border-t border-[#E5E5E5]">
+      <div class="max-w-5xl mx-auto px-4 py-3 flex flex-col">
+        <a href="produto.html" class="text-sm text-[#111111] py-2.5 border-b border-[#F0F0F0] hover:opacity-50 transition-opacity">Produto</a>
+        <a href="mercado.html" class="text-sm text-[#111111] py-2.5 border-b border-[#F0F0F0] hover:opacity-50 transition-opacity">Mercado</a>
+        <a href="blog/" class="text-sm text-[#111111] py-2.5 border-b border-[#F0F0F0] hover:opacity-50 transition-opacity">Blog</a>
+        <a href="sobre.html" class="text-sm text-[#111111] py-2.5 hover:opacity-50 transition-opacity">Sobre</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <section class="border-b border-[#E5E5E5]" style="padding-top:72px;padding-bottom:48px;">
+      <div class="container-inner" style="max-width:800px;">
+        <p class="label-accent mb-4">Perguntas frequentes</p>
+        <h1 class="text-[32px] md:text-[42px] font-bold leading-[1.12] tracking-[-0.03em] text-[#111111] mb-5" style="max-width:700px;">
+          Perguntas frequentes
+        </h1>
+        <p class="text-[15px] md:text-[17px] leading-[1.7] text-[#555555]" style="max-width:640px;">
+          As dúvidas mais comuns sobre o UrbanView e sobre como a implantação funciona. Não achou a sua? Escreva para contato@urbanview.media
+        </p>
+      </div>
+    </section>
+
+    <section style="padding-top:48px;padding-bottom:80px;">
+      <div class="container-inner" style="max-width:800px;">
+        <div class="post">
+          <h2>Quais cidades são atendidas?</h2>
+          <p>Atendemos todas as cidades brasileiras.</p>
+          <h2>Para quem é o UrbanView?</h2>
+          <p>Para a exibidora: a empresa dona do inventário de mídia exterior, seja outdoor, frontlight, painel rodoviário, empena ou mobiliário urbano. Representantes que vendem carteira de terceiros e operações com filiais em mais de uma praça também são atendidos.</p>
+          <h2>O UrbanView trabalha com bi-semana?</h2>
+          <p>Sim. A bi-semana é a unidade de tempo do sistema, e não uma adaptação. Preço, reserva, disponibilidade e ocupação são todos expressos por bi-semana, na grade de face por período.</p>
+          <h2>Preciso digitar todo o meu inventário de novo?</h2>
+          <p>Não. A importação em massa é a primeira etapa da implantação: carregamos a planilha que você usa hoje e geocodificamos os pontos. Sem isso a exibidora não entra no sistema.</p>
+          <h2>O sistema impede venda dobrada na mesma bi-semana?</h2>
+          <p>Sim. A unicidade de face por bi-semana é garantida no banco de dados, não por aviso de tela. Overbooking deixa de depender de conferência visual.</p>
+          <h2>Como funciona a demonstração?</h2>
+          <p>Começa por uma conversa de diagnóstico sobre como você vende hoje. Depois importamos o seu inventário e a demonstração roda com os seus pontos, não com uma base de exemplo.</p>
+          <h2>Consigo exportar meus dados?</h2>
+          <p>Sim. Importação sem custo na entrada e exportação completa na saída. Inventário e histórico saem em formato aberto quando o cliente quiser.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-[#E5E5E5]">
+    <div class="max-w-5xl mx-auto px-4 md:px-8 py-10 md:py-14 flex flex-col md:flex-row gap-10 md:gap-16">
+      <div class="flex-shrink-0 md:min-w-[220px]">
+        <img src="assets/urbanview.png" alt="UrbanView" class="h-6 w-auto mb-5" width="1305" height="160">
+        <p class="text-[12px] text-[#BBBBBB] mb-1">© 2026 Setbox Serviços Digitais</p>
+        <p class="text-[12px] text-[#BBBBBB]">Av. Carneiro Leão, 563 - Zona 01<br>Maringá / PR - 87014-010</p>
+        <p class="text-[12px] text-[#BBBBBB]">CNPJ 08.889.601/0001-09</p>
+      </div>
+      <div class="flex-1">
+        <p class="text-[12px] font-semibold text-[#111111] mb-4">UrbanView</p>
+        <ul class="space-y-2.5">
+          <li><a href="produto.html" class="link-footer">Produto</a></li>
+          <li><a href="mercado.html" class="link-footer">Mercado</a></li>
+          <li><a href="blog/" class="link-footer">Blog</a></li>
+          <li><a href="sobre.html" class="link-footer">Sobre</a></li>
+        </ul>
+      </div>
+      <div class="flex-1">
+        <p class="text-[12px] font-semibold text-[#111111] mb-4">Contato</p>
+        <ul class="space-y-2.5">
+          <li><a href="mailto:contato@urbanview.media" class="link-footer">contato@urbanview.media</a></li>
+          <li><a href="tel:+5541999073688" class="link-footer">(41) 99907-3688</a></li>
+        </ul>
+      </div>
+      <div class="flex-1">
+        <p class="text-[12px] font-semibold text-[#111111] mb-4">Institucional</p>
+        <ul class="space-y-2.5">
+          <li><a href="faq.html" class="link-footer">Perguntas frequentes</a></li>
+          <li><a href="termos-de-uso.html" class="link-footer">Termos de Uso</a></li>
+          <li><a href="politica-de-privacidade.html" class="link-footer">Política de Privacidade</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('nav-toggle').addEventListener('click', function() {
+      var menu = document.getElementById('nav-menu');
+      menu.classList.toggle('hidden');
+      this.setAttribute('aria-expanded', String(!menu.classList.contains('hidden')));
+    });
+  </script>
+</body>
+</html>

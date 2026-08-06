@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Venda dobrada na mesma face e bi-semana é o erro mais caro da mídia exterior. Entenda como ele acontece na planilha e por que só uma trava no banco de dados resolve.">
+  <link rel="canonical" href="https://urbanview.media/blog/overbooking-em-midia-exterior.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="UrbanView">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://urbanview.media/blog/overbooking-em-midia-exterior.html">
+  <meta property="og:title" content="Overbooking: como duas vendas caem na mesma face - UrbanView">
+  <meta property="og:description" content="Venda dobrada na mesma face e bi-semana é o erro mais caro da mídia exterior. Entenda como ele acontece na planilha e por que só uma trava no banco de dados resolve.">
+  <meta property="og:image" content="https://urbanview.media/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Overbooking: como duas vendas caem na mesma face - UrbanView">
+  <meta name="twitter:description" content="Venda dobrada na mesma face e bi-semana é o erro mais caro da mídia exterior. Entenda como ele acontece na planilha e por que só uma trava no banco de dados resolve.">
+  <meta name="twitter:image" content="https://urbanview.media/assets/og-image.png">
+  <title>Overbooking: como duas vendas caem na mesma face - UrbanView</title>
+  <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+  <link rel="manifest" href="../assets/site.webmanifest">
+  <meta name="theme-color" content="#FF7902">
+  <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preload" href="../assets/fonts/wotfard-regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="../assets/fonts/wotfard-bold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="../assets/brand.css">
+  <script>
+    tailwind.config = { theme: { extend: { fontFamily: { sans: ['Wotfard','Inter','system-ui','-apple-system','sans-serif'] } } } }
+  </script>
+</head>
+<body class="font-sans antialiased">
+
+  <!-- Nav -->
+  <nav class="sticky top-0 z-50 bg-[#FAFAFA] border-b border-[#E5E5E5]">
+    <div class="max-w-5xl mx-auto px-4 md:px-8 h-14 flex items-center justify-between">
+      <a href="../index.html"><img src="../assets/urbanview.png" alt="UrbanView" class="h-6 w-auto" width="1305" height="160"></a>
+      <div class="flex items-center gap-4 md:gap-7">
+        <a href="../produto.html" class="hidden md:block text-sm text-[#111111] hover:opacity-50 transition-opacity">Produto</a>
+        <a href="../mercado.html" class="hidden md:block text-sm text-[#111111] hover:opacity-50 transition-opacity">Mercado</a>
+        <a href="index.html" class="hidden md:block text-sm font-medium" style="color:#FF7902;">Blog</a>
+        <a href="../sobre.html" class="hidden md:block text-sm text-[#111111] hover:opacity-50 transition-opacity">Sobre</a>
+        <button id="nav-toggle" class="md:hidden p-1" aria-label="Abrir menu" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="3" width="20" height="2" rx="1" fill="#111111"/>
+            <rect y="9" width="20" height="2" rx="1" fill="#111111"/>
+            <rect y="15" width="20" height="2" rx="1" fill="#111111"/>
+          </svg>
+        </button>
+        <a href="mailto:contato@urbanview.media?subject=UrbanView - Solicitar demonstração" class="text-sm bg-[#FF7902] text-white px-4 py-1.5 rounded-[6px] hover:bg-[#D96500] transition-colors font-medium whitespace-nowrap">Solicitar demonstração</a>
+      </div>
+    </div>
+    <div id="nav-menu" class="hidden md:hidden border-t border-[#E5E5E5]">
+      <div class="max-w-5xl mx-auto px-4 py-3 flex flex-col">
+        <a href="../produto.html" class="text-sm text-[#111111] py-2.5 border-b border-[#F0F0F0] hover:opacity-50 transition-opacity">Produto</a>
+        <a href="../mercado.html" class="text-sm text-[#111111] py-2.5 border-b border-[#F0F0F0] hover:opacity-50 transition-opacity">Mercado</a>
+        <a href="index.html" class="text-sm py-2.5 border-b border-[#F0F0F0] font-medium" style="color:#FF7902;">Blog</a>
+        <a href="../sobre.html" class="text-sm text-[#111111] py-2.5 hover:opacity-50 transition-opacity">Sobre</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <article>
+      <section class="border-b border-[#E5E5E5]" style="padding-top:64px;padding-bottom:48px;">
+        <div class="container-inner" style="max-width:800px;">
+          <a href="index.html" class="label-accent" style="display:inline-block;margin-bottom:20px;">← Blog</a>
+          <h1 class="text-[32px] md:text-[42px] font-bold leading-[1.12] tracking-[-0.03em] text-[#111111]" style="max-width:700px;">
+            Overbooking: como duas vendas caem na mesma face
+          </h1>
+        </div>
+      </section>
+
+      <section style="padding-top:48px;padding-bottom:80px;">
+        <div class="container-inner" style="max-width:800px;">
+          <div class="post">
+            <p class="lead">A ligação chega sempre na véspera da virada. A equipe está com a lona na mão, na frente do ponto, e descobre que aquela face já tem outra campanha instalada. Alguém vendeu duas vezes a mesma coisa.</p>
+            <p>Overbooking é o erro mais caro da mídia exterior porque ele não é descoberto quando acontece. Ele é descoberto no campo, com a lona impressa, o cliente esperando e o prazo estourado. A partir daí não existe boa solução: ou se realoca a campanha para um ponto pior, ou se devolve dinheiro, ou se perde a conta.</p>
+            <h2>Como o erro nasce</h2>
+            <p>Ninguém vende duas vezes de propósito. O erro é sempre de sincronismo entre a intenção de venda e o registro dela. A sequência típica:</p>
+            <ul>
+              <li>O vendedor A reserva a face para uma proposta e pinta a célula de amarelo na planilha;</li>
+              <li>A planilha é enviada por e-mail para a equipe, e cada um passa a ter uma cópia;</li>
+              <li>O vendedor B, que abriu a versão de ontem, vê a face livre e fecha a venda;</li>
+              <li>Os dois pedidos entram no financeiro em dias diferentes, sem nada que os cruze;</li>
+              <li>A ordem de serviço sai duplicada e o conflito só aparece na instalação.</li>
+            </ul>
+            <p>Também há o caminho inverso, mais comum do que parece: a reserva do vendedor A nunca foi liberada. A proposta morreu há dois meses, mas a célula continua amarela, e a face passou três bi-semanas bloqueada sem gerar um centavo. Reserva sem prazo de validade é overbooking ao contrário.</p>
+            <h2>Por que aviso na tela não resolve</h2>
+            <p>A primeira reação de quem informatiza é colocar um alerta: se a face já estiver ocupada, mostrar uma mensagem. Isso reduz o problema, não elimina, porque a verificação e a gravação acontecem em momentos diferentes. Duas pessoas salvando ao mesmo tempo passam as duas pela verificação antes de qualquer uma gravar.</p>
+            <p>O mesmo vale para relatório de conferência. Relatório encontra o conflito depois que ele já existe, e quase sempre tarde demais para reimprimir uma lona.</p>
+            <h2>A garantia tem que ser do banco de dados</h2>
+            <p>A única forma de tornar a venda dobrada impossível é declarar, no próprio banco, que a combinação de <strong>face e bi-semana</strong> só pode existir uma vez para ocupação firme. Assim, quando duas gravações concorrem, o banco recusa a segunda, independentemente do que a tela mostrou. O sistema então trata a recusa como o que ela é: uma informação para o vendedor, não um erro técnico.</p>
+            <p>Junto com a trava, a ocupação precisa de estados explícitos:</p>
+            <ul>
+              <li><strong>Prévia:</strong> simulação de plano de mídia, não bloqueia nada;</li>
+              <li><strong>Opção:</strong> reserva com <em>prazo de validade</em>, que expira sozinha se a proposta não fechar;</li>
+              <li><strong>Firme:</strong> confirmada pelo pedido de inserção, e aí sim ocupa a face de forma exclusiva.</li>
+            </ul>
+            <p>A diferença entre uma exibidora que confia na própria disponibilidade e uma que confere por telefone antes de responder à agência está inteiramente nesses dois pontos: unicidade garantida e reserva com prazo.</p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <!-- OUTROS POSTS -->
+    <section class="border-t border-[#E5E5E5]" style="padding-top:64px;padding-bottom:64px;">
+      <div class="container-inner" style="max-width:800px;">
+        <p class="label-accent mb-6">Continue lendo</p>
+        <a href="o-que-e-bi-semana.html" class="post-card">
+          <h2>O que é bi-semana e por que o outdoor se vende de 14 em 14 dias</h2>
+          <p>O calendário comercial da mídia exterior não usa mês. Usa bi-semana: 26 períodos de 14 dias, numerados com números pares. Entenda a numeração, o prazo de autorização e por que o período não vendido evapora.</p>
+          <span>Leia mais →</span>
+        </a>
+
+        <a href="migrar-inventario-da-planilha.html" class="post-card">
+          <h2>Da planilha ao sistema: migrar o inventário sem parar de vender</h2>
+          <p>O medo é sempre o mesmo: parar de vender durante a troca. Como preparar a planilha, em que ordem ativar os módulos e por que a carga do inventário é sempre a primeira etapa, nunca a última.</p>
+          <span>Leia mais →</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section style="padding-top:96px;padding-bottom:96px;background:#FF7902;">
+      <div class="container-inner" style="text-align:center;">
+        <h2 class="text-[26px] md:text-[38px] font-bold leading-[1.15] tracking-tight text-white mb-5">
+          Você opera mídia exterior?
+        </h2>
+        <p class="text-[15px] md:text-[17px] leading-[1.7] mb-8" style="color:#FFE6CE;max-width:460px;margin-left:auto;margin-right:auto;">
+          O UrbanView põe o seu inventário, a sua grade e o seu faturamento no mesmo sistema.
+        </p>
+        <a href="mailto:contato@urbanview.media?subject=UrbanView - Solicitar demonstração" class="btn-on-orange">Solicitar demonstração</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-[#E5E5E5]">
+    <div class="max-w-5xl mx-auto px-4 md:px-8 py-10 md:py-14 flex flex-col md:flex-row gap-10 md:gap-16">
+      <div class="flex-shrink-0 md:min-w-[220px]">
+        <img src="../assets/urbanview.png" alt="UrbanView" class="h-6 w-auto mb-5" width="1305" height="160">
+        <p class="text-[12px] text-[#BBBBBB] mb-1">© 2026 Setbox Serviços Digitais</p>
+        <p class="text-[12px] text-[#BBBBBB]">Av. Carneiro Leão, 563 - Zona 01<br>Maringá / PR - 87014-010</p>
+        <p class="text-[12px] text-[#BBBBBB]">CNPJ 08.889.601/0001-09</p>
+      </div>
+      <div class="flex-1">
+        <p class="text-[12px] font-semibold text-[#111111] mb-4">UrbanView</p>
+        <ul class="space-y-2.5">
+          <li><a href="../produto.html" class="link-footer">Produto</a></li>
+          <li><a href="../mercado.html" class="link-footer">Mercado</a></li>
+          <li><a href="index.html" class="link-footer">Blog</a></li>
+          <li><a href="../sobre.html" class="link-footer">Sobre</a></li>
+        </ul>
+      </div>
+      <div class="flex-1">
+        <p class="text-[12px] font-semibold text-[#111111] mb-4">Contato</p>
+        <ul class="space-y-2.5">
+          <li><a href="mailto:contato@urbanview.media" class="link-footer">contato@urbanview.media</a></li>
+          <li><a href="tel:+5541999073688" class="link-footer">(41) 99907-3688</a></li>
+        </ul>
+      </div>
+      <div class="flex-1">
+        <p class="text-[12px] font-semibold text-[#111111] mb-4">Institucional</p>
+        <ul class="space-y-2.5">
+          <li><a href="../faq.html" class="link-footer">Perguntas frequentes</a></li>
+          <li><a href="../termos-de-uso.html" class="link-footer">Termos de Uso</a></li>
+          <li><a href="../politica-de-privacidade.html" class="link-footer">Política de Privacidade</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('nav-toggle').addEventListener('click', function() {
+      var menu = document.getElementById('nav-menu');
+      menu.classList.toggle('hidden');
+      this.setAttribute('aria-expanded', String(!menu.classList.contains('hidden')));
+    });
+  </script>
+</body>
+</html>

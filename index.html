@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="UrbanView é o ERP para exibidoras de mídia exterior. Grade bi-semanal sem overbooking, proposta, PI, checking fotográfico e rentabilidade por ponto em um só sistema.">
+  <link rel="canonical" href="https://urbanview.media/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="UrbanView">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://urbanview.media/">
+  <meta property="og:title" content="UrbanView - ERP para mídia exterior">
+  <meta property="og:description" content="UrbanView é o ERP para exibidoras de mídia exterior. Grade bi-semanal sem overbooking, proposta, PI, checking fotográfico e rentabilidade por ponto em um só sistema.">
+  <meta property="og:image" content="https://urbanview.media/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="UrbanView - ERP para mídia exterior">
+  <meta name="twitter:description" content="Grade bi-semanal sem overbooking, proposta, PI, checking fotográfico e rentabilidade por ponto em um só sistema.">
+  <meta name="twitter:image" content="https://urbanview.media/assets/og-image.png">
+  <title>UrbanView - ERP para mídia exterior</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="assets/site.webmanifest">
+  <meta name="theme-color" content="#FF7902">
+  <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preload" href="assets/fonts/wotfard-regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/fonts/wotfard-bold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="assets/brand.css">
+  <script>
+    tailwind.config = { theme: { extend: { fontFamily: { sans: ['Wotfard','Inter','system-ui','-apple-system','sans-serif'] } } } }
+  </script>
+</head>
+<body class="font-sans antialiased">
+
+  <!-- Nav -->
+  <nav class="sticky top-0 z-50 bg-[#FAFAFA] border-b border-[#E5E5E5]">
+    <div class="max-w-5xl mx-auto px-4 md:px-8 h-14 flex items-center justify-between">
+      <a href="index.html"><img src="assets/urbanview.png" alt="UrbanView" class="h-6 w-auto" width="1305" height="160"></a>
+      <div class="flex items-center gap-4 md:gap-7">
+        <a href="produto.html" class="hidden md:block text-sm text-[#111111] hover:opacity-50 transition-opacity">Produto</a>
+        <a href="mercado.html" class="hidden md:block text-sm text-[#111111] hover:opacity-50 transition-opacity">Mercado</a>
+        <a href="blog/" class="hidden md:block text-sm text-[#111111] hover:opacity-50 transition-opacity">Blog</a>
+        <a href="sobre.html" class="hidden md:block text-sm text-[#111111] hover:opacity-50 transition-opacity">Sobre</a>
+        <button id="nav-toggle" class="md:hidden p-1" aria-label="Abrir menu" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="3" width="20" height="2" rx="1" fill="#111111"/>
+            <rect y="9" width="20" height="2" rx="1" fill="#111111"/>
+            <rect y="15" width="20" height="2" rx="1" fill="#111111"/>
+          </svg>
+        </button>
+        <a href="mailto:contato@urbanview.media?subject=UrbanView - Solicitar demonstração" class="text-sm bg-[#FF7902] text-white px-4 py-1.5 rounded-[6px] hover:bg-[#D96500] transition-colors font-medium whitespace-nowrap">Solicitar demonstração</a>
+      </div>
+    </div>
+    <div id="nav-menu" class="hidden md:hidden border-t border-[#E5E5E5]">
+      <div class="max-w-5xl mx-auto px-4 py-3 flex flex-col">
+        <a href="produto.html" class="text-sm text-[#111111] py-2.5 border-b border-[#F0F0F0] hover:opacity-50 transition-opacity">Produto</a>
+        <a href="mercado.html" class="text-sm text-[#111111] py-2.5 border-b border-[#F0F0F0] hover:opacity-50 transition-opacity">Mercado</a>
+        <a href="blog/" class="text-sm text-[#111111] py-2.5 border-b border-[#F0F0F0] hover:opacity-50 transition-opacity">Blog</a>
+        <a href="sobre.html" class="text-sm text-[#111111] py-2.5 hover:opacity-50 transition-opacity">Sobre</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="border-b border-[#E5E5E5]" style="padding-top:96px;padding-bottom:96px;">
+      <div class="container-inner">
+        <div class="two-col" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;">
+          <div>
+            <p class="label-accent mb-4">ERP de mídia exterior</p>
+            <h1 class="text-[38px] md:text-[52px] font-bold leading-[1.05] tracking-[-0.03em] text-[#111111] mb-6">
+              A grade da sua exibidora fora da planilha
+            </h1>
+            <p class="text-[15px] md:text-[17px] leading-[1.7] text-[#555555] mb-8">
+              UrbanView é o sistema de gestão para quem vende outdoor, frontlight, painel e empena. Disponibilidade por bi-semana, proposta, PI, checking e rentabilidade por ponto no mesmo lugar.
+            </p>
+            <div class="hero-cta" style="display:flex;flex-wrap:wrap;gap:12px;">
+              <a href="mailto:contato@urbanview.media?subject=UrbanView - Solicitar demonstração" class="btn-primary">Solicitar demonstração</a>
+              <a href="produto.html" class="btn-ghost">Ver o produto →</a>
+            </div>
+          </div>
+          <div class="border border-[#E5E5E5] rounded-xl bg-white p-6">
+            <p class="text-[11px] font-semibold tracking-wide uppercase text-[#888888] mb-4">Grade de ocupação · bi-semanas</p>
+            <div style="display:grid;grid-template-columns:auto repeat(6,1fr);gap:4px;align-items:center;">
+              <span class="grid-head"></span>
+              <span class="grid-head">02</span>
+              <span class="grid-head">04</span>
+              <span class="grid-head">06</span>
+              <span class="grid-head">08</span>
+              <span class="grid-head">10</span>
+              <span class="grid-head">12</span>
+
+              <span class="grid-face">A-101/1</span>
+              <span class="cell cell-firme"></span>
+              <span class="cell cell-firme"></span>
+              <span class="cell cell-livre"></span>
+              <span class="cell cell-opcao"></span>
+              <span class="cell cell-livre"></span>
+              <span class="cell cell-livre"></span>
+
+              <span class="grid-face">A-101/2</span>
+              <span class="cell cell-livre"></span>
+              <span class="cell cell-opcao"></span>
+              <span class="cell cell-firme"></span>
+              <span class="cell cell-firme"></span>
+              <span class="cell cell-firme"></span>
+              <span class="cell cell-livre"></span>
+
+              <span class="grid-face">B-207/1</span>
+              <span class="cell cell-firme"></span>
+              <span class="cell cell-livre"></span>
+              <span class="cell cell-livre"></span>
+              <span class="cell cell-livre"></span>
+              <span class="cell cell-opcao"></span>
+              <span class="cell cell-firme"></span>
+
+              <span class="grid-face">C-018/1</span>
+              <span class="cell cell-opcao"></span>
+              <span class="cell cell-firme"></span>
+              <span class="cell cell-firme"></span>
+              <span class="cell cell-livre"></span>
+              <span class="cell cell-livre"></span>
+              <span class="cell cell-firme"></span>
+
+              <span class="grid-face">C-018/2</span>
+              <span class="cell cell-livre"></span>
+              <span class="cell cell-livre"></span>
+              <span class="cell cell-opcao"></span>
+              <span class="cell cell-firme"></span>
+              <span class="cell cell-livre"></span>
+              <span class="cell cell-livre"></span>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:18px;">
+              <span class="legend"><i class="cell cell-firme"></i>Firme</span>
+              <span class="legend"><i class="cell cell-opcao"></i>Opção com prazo</span>
+              <span class="legend"><i class="cell cell-livre"></i>Livre</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NÚMEROS -->
+    <section class="border-b border-[#E5E5E5]" style="background:#FFF3E8;padding-top:56px;padding-bottom:56px;">
+      <div class="container-inner">
+        <div class="stats-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:32px;text-align:center;">
+          <div>
+            <div class="stat-num">R$ 1,84 bi</div>
+            <div class="stat-cap">investidos em mídia exterior no Brasil</div>
+          </div>
+          <div>
+            <div class="stat-num">82%</div>
+            <div class="stat-cap">da população brasileira alcançada por OOH</div>
+          </div>
+          <div>
+            <div class="stat-num">88</div>
+            <div class="stat-cap">exibidoras mapeadas em 787 cidades</div>
+          </div>
+          <div>
+            <div class="stat-num">26</div>
+            <div class="stat-cap">bi-semanas para vender no ano</div>
+          </div>
+        </div>
+        <p class="text-[11px] text-[#9A7A5E] text-center mt-8">Fontes: CENP Meios 2019, Kantar Ibope Target Group Index, base pública da Central de Outdoor</p>
+      </div>
+    </section>
+
+    <!-- PROBLEMA -->
+    <section class="border-b border-[#E5E5E5]" style="padding-top:80px;padding-bottom:80px;">
+      <div class="container-inner">
+        <div class="two-col" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;">
+          <div>
+            <p class="label-accent mb-3">O problema</p>
+            <h2 class="text-[26px] md:text-[32px] font-bold leading-[1.2] tracking-tight text-[#111111] mb-5">
+              Cada etapa da venda é um arquivo solto
+            </h2>
+            <p class="text-[15px] leading-[1.8] text-[#555555] mb-4">
+              Para vender uma face, o vendedor abre a planilha para ver o que está livre, monta um PowerPoint com as fotos dos pontos, manda por e-mail, negocia por telefone, redigita o pedido no financeiro e, no fim do mês, tira foto do painel para provar a veiculação.
+            </p>
+            <p class="text-[15px] leading-[1.8] text-[#555555] mb-4">
+              A disponibilidade é uma célula colorida na mão de quem editou por último. Duas vendas na mesma bi-semana só aparecem no dia da instalação.
+            </p>
+            <p class="text-[15px] leading-[1.8] text-[#555555]">
+              O UrbanView transforma cada uma dessas etapas em estado do sistema, com trava, prazo e histórico.
+            </p>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <div class="border border-[#E5E5E5] rounded-xl bg-white p-4" style="display:flex;align-items:center;gap:14px;">
+              <span style="font-size:18px;flex-shrink:0;">📊</span>
+              <div style="min-width:0;">
+                <div class="file-card-name text-[13px] font-medium text-[#111111]" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">disponibilidade-bi-08-v7-FINAL.xlsx</div>
+                <div class="text-[12px] text-[#888888] mt-0.5">Três cópias em circulação por e-mail</div>
+              </div>
+              <span class="badge badge-red">CONFLITO</span>
+            </div>
+            <div class="border border-[#E5E5E5] rounded-xl bg-white p-4" style="display:flex;align-items:center;gap:14px;">
+              <span style="font-size:18px;flex-shrink:0;">📎</span>
+              <div style="min-width:0;">
+                <div class="file-card-name text-[13px] font-medium text-[#111111]" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">proposta-campanha-48MB.pptx</div>
+                <div class="text-[12px] text-[#888888] mt-0.5">Montada à mão, sem preço nem validade</div>
+              </div>
+              <span class="badge badge-yellow">LENTO</span>
+            </div>
+            <div class="border border-[#E5E5E5] rounded-xl bg-white p-4" style="display:flex;align-items:center;gap:14px;">
+              <span style="font-size:18px;flex-shrink:0;">📷</span>
+              <div style="min-width:0;">
+                <div class="text-[13px] font-medium text-[#111111]">Checking no grupo do WhatsApp</div>
+                <div class="text-[12px] text-[#888888] mt-0.5">Sem data, sem geolocalização, sem campanha</div>
+              </div>
+              <span class="badge badge-gray">SEM PROVA</span>
+            </div>
+            <div class="border border-[#E5E5E5] rounded-xl bg-white p-4" style="display:flex;align-items:center;gap:14px;">
+              <span style="font-size:18px;flex-shrink:0;">🧾</span>
+              <div style="min-width:0;">
+                <div class="text-[13px] font-medium text-[#111111]">Aluguel, energia e alvará por ponto</div>
+                <div class="text-[12px] text-[#888888] mt-0.5">Fora do sistema, então ninguém sabe o lucro da face</div>
+              </div>
+              <span class="badge badge-gray">INVISÍVEL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CICLO -->
+    <section class="border-b border-[#E5E5E5]" style="padding-top:80px;padding-bottom:80px;background:#000000;">
+      <div class="container-inner">
+        <div style="text-align:center;margin-bottom:48px;">
+          <p class="text-[11px] font-semibold tracking-wide uppercase mb-3" style="color:#FF7902;">O ciclo completo</p>
+          <h2 class="text-[26px] md:text-[38px] font-bold leading-[1.15] tracking-tight text-white mb-5">
+            Da disponibilidade à comissão, sem redigitar
+          </h2>
+          <p class="text-[15px] md:text-[17px] leading-[1.7]" style="color:#AAAAAA;max-width:600px;margin:0 auto;">
+            Um pedido nasce na grade e morre no contas a receber. Cada passo herda o dado do anterior e deixa rastro de auditoria.
+          </p>
+        </div>
+        <div class="flow">
+          <div class="flow-step"><span class="flow-n">1</span>Disponibilidade</div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-step"><span class="flow-n">2</span>Proposta</div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-step"><span class="flow-n">3</span>PI</div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-step"><span class="flow-n">4</span>Produção</div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-step"><span class="flow-n">5</span>Veiculação</div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-step"><span class="flow-n">6</span>Checking</div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-step"><span class="flow-n">7</span>Faturamento</div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-step"><span class="flow-n">8</span>Comissão</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MÓDULOS -->
+    <section class="border-b border-[#E5E5E5]" id="modulos" style="padding-top:80px;padding-bottom:80px;">
+      <div class="container-inner">
+        <div style="text-align:center;margin-bottom:56px;">
+          <p class="label-accent mb-3">O que o sistema faz</p>
+          <h2 class="text-[26px] md:text-[38px] font-bold leading-[1.15] tracking-tight text-[#111111]" style="max-width:620px;margin:0 auto;">
+            Feito para o inventário, o calendário e a cadeia deste mercado
+          </h2>
+        </div>
+        <div class="three-col" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
+
+          <div class="border border-[#E5E5E5] rounded-xl bg-white p-6">
+            <div class="icon-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF7902" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <h3 class="text-[16px] font-semibold tracking-tight text-[#111111] mb-2">Grade bi-semanal com trava</h3>
+            <p class="text-[14px] leading-[1.7] text-[#555555]">Face por bi-semana, com unicidade garantida no banco. Overbooking deixa de ser uma conferência visual e passa a ser impossível.</p>
+          </div>
+
+          <div class="border border-[#E5E5E5] rounded-xl bg-white p-6">
+            <div class="icon-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF7902" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <h3 class="text-[16px] font-semibold tracking-tight text-[#111111] mb-2">Proposta e pedido de inserção</h3>
+            <p class="text-[14px] leading-[1.7] text-[#555555]">Plano de mídia vira proposta com fotos, mapa, preço e validade. Aceite converte em PI numerado, com pagadores e condições.</p>
+          </div>
+
+          <div class="border border-[#E5E5E5] rounded-xl bg-white p-6">
+            <div class="icon-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF7902" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+            </div>
+            <h3 class="text-[16px] font-semibold tracking-tight text-[#111111] mb-2">Checking e POST BUY</h3>
+            <p class="text-[14px] leading-[1.7] text-[#555555]">Foto com data e coordenada, vinculada à campanha e ao período. O relatório de comprovação sai pronto, por cliente e por bi-semana.</p>
+          </div>
+
+          <div class="border border-[#E5E5E5] rounded-xl bg-white p-6">
+            <div class="icon-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF7902" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3 class="text-[16px] font-semibold tracking-tight text-[#111111] mb-2">Rentabilidade por ponto</h3>
+            <p class="text-[14px] leading-[1.7] text-[#555555]">Aluguel, energia, alvará, manutenção e produção lançados no ponto. A pergunta central do negócio, este ponto dá lucro, ganha resposta.</p>
+          </div>
+
+          <div class="border border-[#E5E5E5] rounded-xl bg-white p-6">
+            <div class="icon-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF7902" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3 class="text-[16px] font-semibold tracking-tight text-[#111111] mb-2">Operação de campo</h3>
+            <p class="text-[14px] leading-[1.7] text-[#555555]">Ordem de serviço, agenda de virada, roteirização, poda e boletim de ocorrência, com aplicativo que funciona sem sinal na rua.</p>
+          </div>
+
+          <div class="border border-[#E5E5E5] rounded-xl bg-white p-6">
+            <div class="icon-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF7902" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+            </div>
+            <h3 class="text-[16px] font-semibold tracking-tight text-[#111111] mb-2">Financeiro e fiscal</h3>
+            <p class="text-[14px] leading-[1.7] text-[#555555]">Contas a receber com conciliação, contas a pagar recorrente, fluxo de caixa, DRE e emissão de NFS-e com retenção de ISS.</p>
+          </div>
+
+        </div>
+        <div style="text-align:center;margin-top:40px;">
+          <a href="produto.html" class="btn-ghost">Ver os 13 módulos →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESPECIFICIDADE -->
+    <section class="border-b border-[#E5E5E5]" style="padding-top:80px;padding-bottom:80px;background:#F3EDFD;">
+      <div class="container-inner">
+        <div class="two-col" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;">
+          <div>
+            <p class="text-[11px] font-semibold tracking-wide uppercase mb-3" style="color:#5C2FB0;">Por que vertical</p>
+            <h2 class="text-[26px] md:text-[32px] font-bold leading-[1.2] tracking-tight text-[#111111] mb-5">
+              ERP genérico não entende mídia exterior
+            </h2>
+            <p class="text-[15px] leading-[1.8] text-[#444444] mb-4">
+              Nenhum ERP de prateleira tem calendário de bi-semanas, trata estoque que evapora quando não vendido ou sabe que a entrega se prova com foto.
+            </p>
+            <p class="text-[15px] leading-[1.8] text-[#444444]">
+              São sete pontos que só existem neste mercado, e cada um deles muda o modelo de dados.
+            </p>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <div class="spec-item"><span class="spec-mark">01</span><div><strong>Bi-semana</strong>: 26 períodos de 14 dias, numerados com números pares</div></div>
+            <div class="spec-item"><span class="spec-mark">02</span><div><strong>Face como estoque perecível</strong>: bi-semana não vendida evapora</div></div>
+            <div class="spec-item"><span class="spec-mark">03</span><div><strong>Checking fotográfico</strong>: a entrega se comprova com imagem geolocalizada</div></div>
+            <div class="spec-item"><span class="spec-mark">04</span><div><strong>Licenciamento municipal</strong>: alvará anual por ponto, poda autorizada, processo</div></div>
+            <div class="spec-item"><span class="spec-mark">05</span><div><strong>Locação do ponto</strong>: o maior custo é o espaço de terceiro, com reajuste e renovação</div></div>
+            <div class="spec-item"><span class="spec-mark">06</span><div><strong>Audiência</strong>: GRP, CPM e impactos, sem isso não se disputa verba de agência</div></div>
+            <div class="spec-item"><span class="spec-mark">07</span><div><strong>Cadeia com quatro papéis</strong>: comissionamento em cascata e BV</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARA QUEM -->
+    <section class="border-b border-[#E5E5E5]" id="para-quem" style="padding-top:80px;padding-bottom:80px;">
+      <div class="container-inner">
+        <div style="text-align:center;margin-bottom:48px;">
+          <p class="label-accent mb-3">Para quem</p>
+          <h2 class="text-[26px] md:text-[38px] font-bold leading-[1.15] tracking-tight text-[#111111]">
+            Quem opera com UrbanView
+          </h2>
+        </div>
+        <div class="three-col" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
+
+          <div class="border border-[#E5E5E5] rounded-xl bg-white p-6">
+            <div class="icon-box icon-box-lg">🏙️</div>
+            <h3 class="text-[17px] font-semibold tracking-tight text-[#111111] mb-3">Exibidoras</h3>
+            <p class="text-[14px] leading-[1.7] text-[#555555]">Donas do inventário: outdoor, frontlight, painel rodoviário, empena e mobiliário urbano.</p>
+            <ul class="mt-4 space-y-2">
+              <li class="bullet"><span class="bullet-mark">→</span>Inventário em três níveis: local, estrutura e face</li>
+              <li class="bullet"><span class="bullet-mark">→</span>Da prospecção do ponto à baixa do ativo</li>
+            </ul>
+          </div>
+
+          <div class="border border-[#E5E5E5] rounded-xl bg-white p-6">
+            <div class="icon-box icon-box-lg">🤝</div>
+            <h3 class="text-[17px] font-semibold tracking-tight text-[#111111] mb-3">Representantes e multi-praça</h3>
+            <p class="text-[14px] leading-[1.7] text-[#555555]">Quem vende carteira de terceiros ou opera filiais em mais de uma cidade.</p>
+            <ul class="mt-4 space-y-2">
+              <li class="bullet"><span class="bullet-mark">→</span>Comissão de agência e BV calculados por PI</li>
+              <li class="bullet"><span class="bullet-mark">→</span>Praça como dimensão de preço e de relatório</li>
+            </ul>
+          </div>
+
+          <div class="border border-[#E5E5E5] rounded-xl bg-white p-6">
+            <div class="icon-box icon-box-lg">📣</div>
+            <h3 class="text-[17px] font-semibold tracking-tight text-[#111111] mb-3">Agências e anunciantes</h3>
+            <p class="text-[14px] leading-[1.7] text-[#555555]">Quem compra a mídia e precisa de disponibilidade real e comprovação organizada.</p>
+            <ul class="mt-4 space-y-2">
+              <li class="bullet"><span class="bullet-mark">→</span>Busca de pontos com disponibilidade verdadeira</li>
+              <li class="bullet"><span class="bullet-mark">→</span>Acompanhamento da campanha e do checking</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section style="padding-top:96px;padding-bottom:96px;background:#FF7902;">
+      <div class="container-inner" style="text-align:center;">
+        <h2 class="text-[26px] md:text-[38px] font-bold leading-[1.15] tracking-tight text-white mb-5">
+          Veja a sua grade dentro do sistema
+        </h2>
+        <p class="text-[15px] md:text-[17px] leading-[1.7] mb-8" style="color:#FFE6CE;max-width:460px;margin-left:auto;margin-right:auto;">
+          Agende uma demonstração com a equipe UrbanView. Levamos o seu inventário para dentro do produto e mostramos o ciclo rodando.
+        </p>
+        <a href="mailto:contato@urbanview.media?subject=UrbanView - Solicitar demonstração" class="btn-on-orange">Solicitar demonstração</a>
+        <div class="mt-4">
+          <a href="mailto:contato@urbanview.media" class="inline-flex items-center gap-2 text-[14px] font-medium hover:opacity-70 transition-opacity" style="color:#FFE6CE;">contato@urbanview.media →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-[#E5E5E5]">
+    <div class="max-w-5xl mx-auto px-4 md:px-8 py-10 md:py-14 flex flex-col md:flex-row gap-10 md:gap-16">
+      <div class="flex-shrink-0 md:min-w-[220px]">
+        <img src="assets/urbanview.png" alt="UrbanView" class="h-6 w-auto mb-5" width="1305" height="160">
+        <p class="text-[12px] text-[#BBBBBB] mb-1">© 2026 Setbox Serviços Digitais</p>
+        <p class="text-[12px] text-[#BBBBBB]">Av. Carneiro Leão, 563 - Zona 01<br>Maringá / PR - 87014-010</p>
+        <p class="text-[12px] text-[#BBBBBB]">CNPJ 08.889.601/0001-09</p>
+      </div>
+      <div class="flex-1">
+        <p class="text-[12px] font-semibold text-[#111111] mb-4">UrbanView</p>
+        <ul class="space-y-2.5">
+          <li><a href="produto.html" class="link-footer">Produto</a></li>
+          <li><a href="mercado.html" class="link-footer">Mercado</a></li>
+          <li><a href="blog/" class="link-footer">Blog</a></li>
+          <li><a href="sobre.html" class="link-footer">Sobre</a></li>
+        </ul>
+      </div>
+      <div class="flex-1">
+        <p class="text-[12px] font-semibold text-[#111111] mb-4">Contato</p>
+        <ul class="space-y-2.5">
+          <li><a href="mailto:contato@urbanview.media" class="link-footer">contato@urbanview.media</a></li>
+          <li><a href="tel:+5541999073688" class="link-footer">(41) 99907-3688</a></li>
+        </ul>
+      </div>
+      <div class="flex-1">
+        <p class="text-[12px] font-semibold text-[#111111] mb-4">Institucional</p>
+        <ul class="space-y-2.5">
+          <li><a href="faq.html" class="link-footer">Perguntas frequentes</a></li>
+          <li><a href="termos-de-uso.html" class="link-footer">Termos de Uso</a></li>
+          <li><a href="politica-de-privacidade.html" class="link-footer">Política de Privacidade</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('nav-toggle').addEventListener('click', function() {
+      var menu = document.getElementById('nav-menu');
+      menu.classList.toggle('hidden');
+      this.setAttribute('aria-expanded', String(!menu.classList.contains('hidden')));
+    });
+  </script>
+</body>
+</html>

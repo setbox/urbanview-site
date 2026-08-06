@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="O UrbanView nasceu de uma operação real de exibidora, das normas do setor e do que há de mais avançado em software de mídia exterior.">
+  <link rel="canonical" href="https://urbanview.media/sobre.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="UrbanView">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://urbanview.media/sobre.html">
+  <meta property="og:title" content="Sobre - UrbanView">
+  <meta property="og:description" content="O UrbanView nasceu de uma operação real de exibidora, das normas do setor e do que há de mais avançado em software de mídia exterior.">
+  <meta property="og:image" content="https://urbanview.media/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sobre - UrbanView">
+  <meta name="twitter:description" content="Como o ERP de mídia exterior UrbanView é construído, e o que ele assume sobre o mercado.">
+  <meta name="twitter:image" content="https://urbanview.media/assets/og-image.png">
+  <title>Sobre - UrbanView</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="assets/site.webmanifest">
+  <meta name="theme-color" content="#FF7902">
+  <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preload" href="assets/fonts/wotfard-regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/fonts/wotfard-bold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="assets/brand.css">
+  <script>
+    tailwind.config = { theme: { extend: { fontFamily: { sans: ['Wotfard','Inter','system-ui','-apple-system','sans-serif'] } } } }
+  </script>
+</head>
+<body class="font-sans antialiased">
+
+  <!-- Nav -->
+  <nav class="sticky top-0 z-50 bg-[#FAFAFA] border-b border-[#E5E5E5]">
+    <div class="max-w-5xl mx-auto px-4 md:px-8 h-14 flex items-center justify-between">
+      <a href="index.html"><img src="assets/urbanview.png" alt="UrbanView" class="h-6 w-auto" width="1305" height="160"></a>
+      <div class="flex items-center gap-4 md:gap-7">
+        <a href="produto.html" class="hidden md:block text-sm text-[#111111] hover:opacity-50 transition-opacity">Produto</a>
+        <a href="mercado.html" class="hidden md:block text-sm text-[#111111] hover:opacity-50 transition-opacity">Mercado</a>
+        <a href="blog/" class="hidden md:block text-sm text-[#111111] hover:opacity-50 transition-opacity">Blog</a>
+        <a href="sobre.html" class="hidden md:block text-sm font-medium" style="color:#FF7902;">Sobre</a>
+        <button id="nav-toggle" class="md:hidden p-1" aria-label="Abrir menu" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="3" width="20" height="2" rx="1" fill="#111111"/>
+            <rect y="9" width="20" height="2" rx="1" fill="#111111"/>
+            <rect y="15" width="20" height="2" rx="1" fill="#111111"/>
+          </svg>
+        </button>
+        <a href="mailto:contato@urbanview.media?subject=UrbanView - Solicitar demonstração" class="text-sm bg-[#FF7902] text-white px-4 py-1.5 rounded-[6px] hover:bg-[#D96500] transition-colors font-medium whitespace-nowrap">Solicitar demonstração</a>
+      </div>
+    </div>
+    <div id="nav-menu" class="hidden md:hidden border-t border-[#E5E5E5]">
+      <div class="max-w-5xl mx-auto px-4 py-3 flex flex-col">
+        <a href="produto.html" class="text-sm text-[#111111] py-2.5 border-b border-[#F0F0F0] hover:opacity-50 transition-opacity">Produto</a>
+        <a href="mercado.html" class="text-sm text-[#111111] py-2.5 border-b border-[#F0F0F0] hover:opacity-50 transition-opacity">Mercado</a>
+        <a href="blog/" class="text-sm text-[#111111] py-2.5 border-b border-[#F0F0F0] hover:opacity-50 transition-opacity">Blog</a>
+        <a href="sobre.html" class="text-sm py-2.5 font-medium" style="color:#FF7902;">Sobre</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="border-b border-[#E5E5E5]" style="padding-top:80px;padding-bottom:64px;">
+      <div class="container-inner">
+        <p class="label-accent mb-4">Sobre</p>
+        <h1 class="text-[34px] md:text-[46px] font-bold leading-[1.08] tracking-[-0.03em] text-[#111111] mb-6" style="max-width:720px;">
+          Software feito com quem opera a rua
+        </h1>
+        <p class="text-[15px] md:text-[17px] leading-[1.7] text-[#555555]" style="max-width:640px;">
+          UrbanView existe para tirar a exibidora da planilha. Cada regra do sistema veio de como o mercado de mídia exterior funciona de verdade, na rua e no escritório.
+        </p>
+      </div>
+    </section>
+
+    <!-- MÉTODO -->
+    <section class="border-b border-[#E5E5E5]" style="padding-top:80px;padding-bottom:80px;">
+      <div class="container-inner">
+        <div class="two-col" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;">
+          <div>
+            <p class="label-accent mb-3">Método</p>
+            <h2 class="text-[26px] md:text-[32px] font-bold leading-[1.2] tracking-tight text-[#111111] mb-5">
+              O produto nasceu de uma operação real, não de suposição
+            </h2>
+            <p class="text-[15px] leading-[1.8] text-[#555555] mb-4">
+              Antes de escrever a primeira tela, acompanhamos a rotina de uma exibidora de verdade: como ela reserva, como negocia, como instala, como comprova e como fatura.
+            </p>
+            <p class="text-[15px] leading-[1.8] text-[#555555] mb-4">
+              Sobre isso cruzamos as normas do setor, o guia de métricas de audiência e o que há de mais avançado em software de mídia exterior, dentro e fora do Brasil.
+            </p>
+            <p class="text-[15px] leading-[1.8] text-[#555555]">
+              O resultado é um produto que descreve o processo como ele acontece, não como alguém imagina que aconteça. É daí que sai cada regra do UrbanView.
+            </p>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <div class="border border-[#E5E5E5] rounded-xl bg-white p-5">
+              <div class="text-[15px] font-semibold text-[#111111] mb-1">Operação real</div>
+              <div class="text-[13px] leading-[1.7] text-[#555555]">O ciclo completo de uma exibidora em funcionamento, da reserva da face ao recebimento.</div>
+            </div>
+            <div class="border border-[#E5E5E5] rounded-xl bg-white p-5">
+              <div class="text-[15px] font-semibold text-[#111111] mb-1">Normas do setor</div>
+              <div class="text-[13px] leading-[1.7] text-[#555555]">Guia de procedimentos da Central de Outdoor, guia de métricas OOH da ABA e metodologia de auditoria do IVC.</div>
+            </div>
+            <div class="border border-[#E5E5E5] rounded-xl bg-white p-5">
+              <div class="text-[15px] font-semibold text-[#111111] mb-1">O estado da arte</div>
+              <div class="text-[13px] leading-[1.7] text-[#555555]">O que há de mais avançado em software de mídia exterior no Brasil e no exterior.</div>
+            </div>
+            <div class="border border-[#E5E5E5] rounded-xl bg-white p-5">
+              <div class="text-[15px] font-semibold text-[#111111] mb-1">Escopo declarado</div>
+              <div class="text-[13px] leading-[1.7] text-[#555555]">Treze módulos mapeados, com fronteiras explícitas do que fica fora do produto.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRINCÍPIOS -->
+    <section class="border-b border-[#E5E5E5]" style="padding-top:80px;padding-bottom:80px;background:#FFF3E8;">
+      <div class="container-inner">
+        <div style="text-align:center;margin-bottom:48px;">
+          <p class="label-accent mb-3">Princípios</p>
+          <h2 class="text-[26px] md:text-[38px] font-bold leading-[1.15] tracking-tight text-[#111111]">
+            Como decidimos o que construir
+          </h2>
+        </div>
+        <div class="three-col" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
+          <div class="border border-[#F0DCC6] rounded-xl bg-white p-6">
+            <h3 class="text-[16px] font-semibold text-[#111111] mb-2">Regra no banco, não na tela</h3>
+            <p class="text-[13px] leading-[1.7] text-[#555555]">Overbooking, isolamento entre exibidoras e prazo de reserva são garantidos pelo dado. Aviso na interface não é trava.</p>
+          </div>
+          <div class="border border-[#F0DCC6] rounded-xl bg-white p-6">
+            <h3 class="text-[16px] font-semibold text-[#111111] mb-2">Menos módulo, mais ciclo fechado</h3>
+            <p class="text-[13px] leading-[1.7] text-[#555555]">Preferimos entregar do começo ao fim uma etapa que a exibidora usa todo dia a listar quarenta relatórios que ninguém abre.</p>
+          </div>
+          <div class="border border-[#F0DCC6] rounded-xl bg-white p-6">
+            <h3 class="text-[16px] font-semibold text-[#111111] mb-2">O dado é do cliente</h3>
+            <p class="text-[13px] leading-[1.7] text-[#555555]">Importação sem custo na entrada e exportação completa na saída. Inventário e histórico saem em formato aberto quando o cliente quiser.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESTÁGIO -->
+    <section class="border-b border-[#E5E5E5]" style="padding-top:80px;padding-bottom:80px;">
+      <div class="container-inner">
+        <div class="two-col" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;">
+          <div>
+            <p class="label-roxo mb-3">Estágio</p>
+            <h2 class="text-[26px] md:text-[32px] font-bold leading-[1.2] tracking-tight text-[#111111] mb-5">
+              Em construção, com exibidoras parceiras
+            </h2>
+            <p class="text-[15px] leading-[1.8] text-[#555555] mb-4">
+              O UrbanView está em desenvolvimento ativo. Trabalhamos com um número limitado de exibidoras parceiras, que entram cedo, ajudam a definir prioridade e recebem a implantação acompanhada.
+            </p>
+            <p class="text-[15px] leading-[1.8] text-[#555555] mb-6">
+              Se você opera inventário de mídia exterior e quer ver a sua grade dentro do produto, essa é a porta de entrada.
+            </p>
+            <a href="mailto:contato@urbanview.media?subject=UrbanView - Exibidora parceira" class="btn-primary">Quero participar</a>
+          </div>
+          <div class="border border-[#E5E5E5] rounded-xl bg-white p-6">
+            <p class="text-[11px] font-semibold tracking-wide uppercase text-[#888888] mb-4">Como funciona a parceria</p>
+            <div class="step"><span class="step-n">1</span><div><div class="text-[14px] font-semibold text-[#111111] mb-1">Conversa de diagnóstico</div><div class="text-[13px] leading-[1.7] text-[#555555]">Uma hora sobre como você vende hoje, com a planilha aberta.</div></div></div>
+            <div class="step"><span class="step-n">2</span><div><div class="text-[14px] font-semibold text-[#111111] mb-1">Carga do seu inventário</div><div class="text-[13px] leading-[1.7] text-[#555555]">Importamos e geocodificamos os seus pontos para a demonstração.</div></div></div>
+            <div class="step"><span class="step-n">3</span><div><div class="text-[14px] font-semibold text-[#111111] mb-1">Demonstração com dado seu</div><div class="text-[13px] leading-[1.7] text-[#555555]">Você navega na sua própria grade, não em uma base de exemplo.</div></div></div>
+            <div class="step"><span class="step-n">4</span><div><div class="text-[14px] font-semibold text-[#111111] mb-1">Implantação acompanhada</div><div class="text-[13px] leading-[1.7] text-[#555555]">Entrada por etapas, na ordem que tira a planilha mais cara primeiro.</div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section style="padding-top:96px;padding-bottom:96px;background:#FF7902;">
+      <div class="container-inner" style="text-align:center;">
+        <h2 class="text-[26px] md:text-[38px] font-bold leading-[1.15] tracking-tight text-white mb-5">
+          Vamos conversar sobre o seu inventário
+        </h2>
+        <p class="text-[15px] md:text-[17px] leading-[1.7] mb-8" style="color:#FFE6CE;max-width:460px;margin-left:auto;margin-right:auto;">
+          Conte quantos pontos você opera e em quais praças. A partir daí montamos a demonstração.
+        </p>
+        <a href="mailto:contato@urbanview.media?subject=UrbanView - Solicitar demonstração" class="btn-on-orange">Solicitar demonstração</a>
+        <div class="mt-4">
+          <a href="mailto:contato@urbanview.media" class="inline-flex items-center gap-2 text-[14px] font-medium hover:opacity-70 transition-opacity" style="color:#FFE6CE;">contato@urbanview.media →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-[#E5E5E5]">
+    <div class="max-w-5xl mx-auto px-4 md:px-8 py-10 md:py-14 flex flex-col md:flex-row gap-10 md:gap-16">
+      <div class="flex-shrink-0 md:min-w-[220px]">
+        <img src="assets/urbanview.png" alt="UrbanView" class="h-6 w-auto mb-5" width="1305" height="160">
+        <p class="text-[12px] text-[#BBBBBB] mb-1">© 2026 Setbox Serviços Digitais</p>
+        <p class="text-[12px] text-[#BBBBBB]">Av. Carneiro Leão, 563 - Zona 01<br>Maringá / PR - 87014-010</p>
+        <p class="text-[12px] text-[#BBBBBB]">CNPJ 08.889.601/0001-09</p>
+      </div>
+      <div class="flex-1">
+        <p class="text-[12px] font-semibold text-[#111111] mb-4">UrbanView</p>
+        <ul class="space-y-2.5">
+          <li><a href="produto.html" class="link-footer">Produto</a></li>
+          <li><a href="mercado.html" class="link-footer">Mercado</a></li>
+          <li><a href="blog/" class="link-footer">Blog</a></li>
+          <li><a href="sobre.html" class="link-footer">Sobre</a></li>
+        </ul>
+      </div>
+      <div class="flex-1">
+        <p class="text-[12px] font-semibold text-[#111111] mb-4">Contato</p>
+        <ul class="space-y-2.5">
+          <li><a href="mailto:contato@urbanview.media" class="link-footer">contato@urbanview.media</a></li>
+          <li><a href="tel:+5541999073688" class="link-footer">(41) 99907-3688</a></li>
+        </ul>
+      </div>
+      <div class="flex-1">
+        <p class="text-[12px] font-semibold text-[#111111] mb-4">Institucional</p>
+        <ul class="space-y-2.5">
+          <li><a href="faq.html" class="link-footer">Perguntas frequentes</a></li>
+          <li><a href="termos-de-uso.html" class="link-footer">Termos de Uso</a></li>
+          <li><a href="politica-de-privacidade.html" class="link-footer">Política de Privacidade</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('nav-toggle').addEventListener('click', function() {
+      var menu = document.getElementById('nav-menu');
+      menu.classList.toggle('hidden');
+      this.setAttribute('aria-expanded', String(!menu.classList.contains('hidden')));
+    });
+  </script>
+</body>
+</html>

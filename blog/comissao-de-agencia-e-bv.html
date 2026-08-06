@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A comissão de agência sai do valor pago pelo cliente. O BV sai do bolso da exibidora. Somar os dois no mesmo campo é o jeito mais rápido de errar a margem do PI.">
+  <link rel="canonical" href="https://urbanview.media/blog/comissao-de-agencia-e-bv.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="UrbanView">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://urbanview.media/blog/comissao-de-agencia-e-bv.html">
+  <meta property="og:title" content="Comissão de agência e BV: por que não são a mesma coisa - UrbanView">
+  <meta property="og:description" content="A comissão de agência sai do valor pago pelo cliente. O BV sai do bolso da exibidora. Somar os dois no mesmo campo é o jeito mais rápido de errar a margem do PI.">
+  <meta property="og:image" content="https://urbanview.media/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Comissão de agência e BV: por que não são a mesma coisa - UrbanView">
+  <meta name="twitter:description" content="A comissão de agência sai do valor pago pelo cliente. O BV sai do bolso da exibidora. Somar os dois no mesmo campo é o jeito mais rápido de errar a margem do PI.">
+  <meta name="twitter:image" content="https://urbanview.media/assets/og-image.png">
+  <title>Comissão de agência e BV: por que não são a mesma coisa - UrbanView</title>
+  <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+  <link rel="manifest" href="../assets/site.webmanifest">
+  <meta name="theme-color" content="#FF7902">
+  <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preload" href="../assets/fonts/wotfard-regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="../assets/fonts/wotfard-bold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="../assets/brand.css">
+  <script>
+    tailwind.config = { theme: { extend: { fontFamily: { sans: ['Wotfard','Inter','system-ui','-apple-system','sans-serif'] } } } }
+  </script>
+</head>
+<body class="font-sans antialiased">
+
+  <!-- Nav -->
+  <nav class="sticky top-0 z-50 bg-[#FAFAFA] border-b border-[#E5E5E5]">
+    <div class="max-w-5xl mx-auto px-4 md:px-8 h-14 flex items-center justify-between">
+      <a href="../index.html"><img src="../assets/urbanview.png" alt="UrbanView" class="h-6 w-auto" width="1305" height="160"></a>
+      <div class="flex items-center gap-4 md:gap-7">
+        <a href="../produto.html" class="hidden md:block text-sm text-[#111111] hover:opacity-50 transition-opacity">Produto</a>
+        <a href="../mercado.html" class="hidden md:block text-sm text-[#111111] hover:opacity-50 transition-opacity">Mercado</a>
+        <a href="index.html" class="hidden md:block text-sm font-medium" style="color:#FF7902;">Blog</a>
+        <a href="../sobre.html" class="hidden md:block text-sm text-[#111111] hover:opacity-50 transition-opacity">Sobre</a>
+        <button id="nav-toggle" class="md:hidden p-1" aria-label="Abrir menu" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="3" width="20" height="2" rx="1" fill="#111111"/>
+            <rect y="9" width="20" height="2" rx="1" fill="#111111"/>
+            <rect y="15" width="20" height="2" rx="1" fill="#111111"/>
+          </svg>
+        </button>
+        <a href="mailto:contato@urbanview.media?subject=UrbanView - Solicitar demonstração" class="text-sm bg-[#FF7902] text-white px-4 py-1.5 rounded-[6px] hover:bg-[#D96500] transition-colors font-medium whitespace-nowrap">Solicitar demonstração</a>
+      </div>
+    </div>
+    <div id="nav-menu" class="hidden md:hidden border-t border-[#E5E5E5]">
+      <div class="max-w-5xl mx-auto px-4 py-3 flex flex-col">
+        <a href="../produto.html" class="text-sm text-[#111111] py-2.5 border-b border-[#F0F0F0] hover:opacity-50 transition-opacity">Produto</a>
+        <a href="../mercado.html" class="text-sm text-[#111111] py-2.5 border-b border-[#F0F0F0] hover:opacity-50 transition-opacity">Mercado</a>
+        <a href="index.html" class="text-sm py-2.5 border-b border-[#F0F0F0] font-medium" style="color:#FF7902;">Blog</a>
+        <a href="../sobre.html" class="text-sm text-[#111111] py-2.5 hover:opacity-50 transition-opacity">Sobre</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <article>
+      <section class="border-b border-[#E5E5E5]" style="padding-top:64px;padding-bottom:48px;">
+        <div class="container-inner" style="max-width:800px;">
+          <a href="index.html" class="label-accent" style="display:inline-block;margin-bottom:20px;">← Blog</a>
+          <h1 class="text-[32px] md:text-[42px] font-bold leading-[1.12] tracking-[-0.03em] text-[#111111]" style="max-width:700px;">
+            Comissão de agência e BV: por que não são a mesma coisa
+          </h1>
+        </div>
+      </section>
+
+      <section style="padding-top:48px;padding-bottom:80px;">
+        <div class="container-inner" style="max-width:800px;">
+          <div class="post">
+            <p class="lead">Duas siglas aparecem em toda negociação de mídia exterior, e são tratadas como se fossem a mesma coisa: a comissão de agência e o BV. Elas saem de bolsos diferentes, e confundi-las é o caminho mais rápido para fechar um pedido achando que teve margem.</p>
+            <h2>Comissão de agência</h2>
+            <p>A agência planeja a campanha, escolhe os pontos, negocia e responde pelo cliente. Por esse trabalho ela recebe uma comissão, tradicionalmente em torno de <strong>20% sobre o valor investido</strong>.</p>
+            <p>O ponto essencial: essa comissão <strong>sai do valor pago pelo anunciante</strong>. Ela é parte do preço da campanha, não um custo adicional da exibidora. Se a campanha é de R$ 10 mil, a agência retém a sua parte e repassa o restante. A exibidora recebe menos, mas o preço praticado no mercado continua sendo R$ 10 mil.</p>
+            <h2>BV, o bônus de volume</h2>
+            <p>O BV é outra coisa. É um bônus negociado sobre o volume que a agência trouxe ao longo do ano, e <strong>sai do bolso da exibidora</strong>. Não está embutido no preço da campanha: é uma redução da margem dela, concedida como incentivo de relacionamento.</p>
+            <p>Como depende do acumulado, o BV costuma ser apurado em outro ritmo, muitas vezes no fim do ano ou por faixa atingida. Isso cria um descasamento perigoso: o pedido parece rentável no mês em que foi faturado, e a conta real só aparece no acerto.</p>
+            <h2>A conta lado a lado</h2>
+            <p>Sobre uma campanha de R$ 10.000, com 20% de comissão e 5% de BV negociado:</p>
+            <ul>
+              <li><strong>O anunciante paga:</strong> R$ 10.000;</li>
+              <li><strong>A agência retém a comissão:</strong> R$ 2.000, que saem do valor pago pelo cliente;</li>
+              <li><strong>A exibidora fatura:</strong> R$ 8.000;</li>
+              <li><strong>A exibidora ainda concede BV:</strong> R$ 500, que saem da receita dela;</li>
+              <li><strong>Sobra, antes de imposto e custo de ponto:</strong> R$ 7.500.</li>
+            </ul>
+            <p>Quem lança comissão e BV no mesmo campo enxerga 25% de "comissão" e acerta o total por coincidência. O que se perde não é o número final, é a capacidade de decidir: não dá para saber se a política de BV está pagando o volume que prometeu, nem para comparar a rentabilidade de vender via agência ou direto.</p>
+            <h2>O vendedor é uma terceira linha</h2>
+            <p>Some ainda a comissão do vendedor interno ou do representante, que incide sobre a receita da exibidora e tem regra própria, muitas vezes diferente conforme o pedido tenha vindo de agência ou de venda direta.</p>
+            <p>São três remunerações, três origens, três momentos de apuração:</p>
+            <ul>
+              <li><strong>Comissão de agência:</strong> do valor do cliente, no fechamento do pedido;</li>
+              <li><strong>BV:</strong> da margem da exibidora, por volume acumulado;</li>
+              <li><strong>Comissão de vendas:</strong> da receita da exibidora, em regra no recebimento.</li>
+            </ul>
+            <h2>O que isso exige do sistema</h2>
+            <p>O pedido de inserção precisa registrar cada uma separadamente, com base de cálculo, percentual e momento de apuração próprios. Só assim o relatório de rentabilidade por campanha mostra o que sobrou de verdade, e a exibidora consegue responder a uma pergunta simples que quase ninguém responde: esta agência, com o BV que ela custa, dá mais lucro que a venda direta?</p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <!-- OUTROS POSTS -->
+    <section class="border-t border-[#E5E5E5]" style="padding-top:64px;padding-bottom:64px;">
+      <div class="container-inner" style="max-width:800px;">
+        <p class="label-accent mb-6">Continue lendo</p>
+        <a href="permuta-em-midia-exterior.html" class="post-card">
+          <h2>Permuta é negociação, não desconto</h2>
+          <p>Trocar veiculação por produto ou serviço é prática corrente do setor. O que quase ninguém registra direito é que permuta não é desconto nem isenção: há prestação de serviço dos dois lados, e nota a emitir.</p>
+          <span>Leia mais →</span>
+        </a>
+
+        <a href="o-que-significa-ooh.html" class="post-card">
+          <h2>O que significa OOH?</h2>
+          <p>OOH é a sigla para Out of Home, ou Fora de Casa. É toda publicidade exibida fora do ambiente doméstico, do outdoor na avenida ao painel na estação de metrô. Entenda os formatos, quem é quem na cadeia e por que o que se vende é a face.</p>
+          <span>Leia mais →</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section style="padding-top:96px;padding-bottom:96px;background:#FF7902;">
+      <div class="container-inner" style="text-align:center;">
+        <h2 class="text-[26px] md:text-[38px] font-bold leading-[1.15] tracking-tight text-white mb-5">
+          Você opera mídia exterior?
+        </h2>
+        <p class="text-[15px] md:text-[17px] leading-[1.7] mb-8" style="color:#FFE6CE;max-width:460px;margin-left:auto;margin-right:auto;">
+          O UrbanView põe o seu inventário, a sua grade e o seu faturamento no mesmo sistema.
+        </p>
+        <a href="mailto:contato@urbanview.media?subject=UrbanView - Solicitar demonstração" class="btn-on-orange">Solicitar demonstração</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-[#E5E5E5]">
+    <div class="max-w-5xl mx-auto px-4 md:px-8 py-10 md:py-14 flex flex-col md:flex-row gap-10 md:gap-16">
+      <div class="flex-shrink-0 md:min-w-[220px]">
+        <img src="../assets/urbanview.png" alt="UrbanView" class="h-6 w-auto mb-5" width="1305" height="160">
+        <p class="text-[12px] text-[#BBBBBB] mb-1">© 2026 Setbox Serviços Digitais</p>
+        <p class="text-[12px] text-[#BBBBBB]">Av. Carneiro Leão, 563 - Zona 01<br>Maringá / PR - 87014-010</p>
+        <p class="text-[12px] text-[#BBBBBB]">CNPJ 08.889.601/0001-09</p>
+      </div>
+      <div class="flex-1">
+        <p class="text-[12px] font-semibold text-[#111111] mb-4">UrbanView</p>
+        <ul class="space-y-2.5">
+          <li><a href="../produto.html" class="link-footer">Produto</a></li>
+          <li><a href="../mercado.html" class="link-footer">Mercado</a></li>
+          <li><a href="index.html" class="link-footer">Blog</a></li>
+          <li><a href="../sobre.html" class="link-footer">Sobre</a></li>
+        </ul>
+      </div>
+      <div class="flex-1">
+        <p class="text-[12px] font-semibold text-[#111111] mb-4">Contato</p>
+        <ul class="space-y-2.5">
+          <li><a href="mailto:contato@urbanview.media" class="link-footer">contato@urbanview.media</a></li>
+          <li><a href="tel:+5541999073688" class="link-footer">(41) 99907-3688</a></li>
+        </ul>
+      </div>
+      <div class="flex-1">
+        <p class="text-[12px] font-semibold text-[#111111] mb-4">Institucional</p>
+        <ul class="space-y-2.5">
+          <li><a href="../faq.html" class="link-footer">Perguntas frequentes</a></li>
+          <li><a href="../termos-de-uso.html" class="link-footer">Termos de Uso</a></li>
+          <li><a href="../politica-de-privacidade.html" class="link-footer">Política de Privacidade</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('nav-toggle').addEventListener('click', function() {
+      var menu = document.getElementById('nav-menu');
+      menu.classList.toggle('hidden');
+      this.setAttribute('aria-expanded', String(!menu.classList.contains('hidden')));
+    });
+  </script>
+</body>
+</html>

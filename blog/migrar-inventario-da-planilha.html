@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Como levar o inventário de mídia exterior da planilha para um sistema: o que preparar, em que ordem entrar e como manter a operação vendendo durante a migração.">
+  <link rel="canonical" href="https://urbanview.media/blog/migrar-inventario-da-planilha.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="UrbanView">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://urbanview.media/blog/migrar-inventario-da-planilha.html">
+  <meta property="og:title" content="Da planilha ao sistema: migrar o inventário sem parar de vender - UrbanView">
+  <meta property="og:description" content="Como levar o inventário de mídia exterior da planilha para um sistema: o que preparar, em que ordem entrar e como manter a operação vendendo durante a migração.">
+  <meta property="og:image" content="https://urbanview.media/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Da planilha ao sistema: migrar o inventário sem parar de vender - UrbanView">
+  <meta name="twitter:description" content="Como levar o inventário de mídia exterior da planilha para um sistema: o que preparar, em que ordem entrar e como manter a operação vendendo durante a migração.">
+  <meta name="twitter:image" content="https://urbanview.media/assets/og-image.png">
+  <title>Da planilha ao sistema: migrar o inventário sem parar de vender - UrbanView</title>
+  <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+  <link rel="manifest" href="../assets/site.webmanifest">
+  <meta name="theme-color" content="#FF7902">
+  <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preload" href="../assets/fonts/wotfard-regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="../assets/fonts/wotfard-bold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="../assets/brand.css">
+  <script>
+    tailwind.config = { theme: { extend: { fontFamily: { sans: ['Wotfard','Inter','system-ui','-apple-system','sans-serif'] } } } }
+  </script>
+</head>
+<body class="font-sans antialiased">
+
+  <!-- Nav -->
+  <nav class="sticky top-0 z-50 bg-[#FAFAFA] border-b border-[#E5E5E5]">
+    <div class="max-w-5xl mx-auto px-4 md:px-8 h-14 flex items-center justify-between">
+      <a href="../index.html"><img src="../assets/urbanview.png" alt="UrbanView" class="h-6 w-auto" width="1305" height="160"></a>
+      <div class="flex items-center gap-4 md:gap-7">
+        <a href="../produto.html" class="hidden md:block text-sm text-[#111111] hover:opacity-50 transition-opacity">Produto</a>
+        <a href="../mercado.html" class="hidden md:block text-sm text-[#111111] hover:opacity-50 transition-opacity">Mercado</a>
+        <a href="index.html" class="hidden md:block text-sm font-medium" style="color:#FF7902;">Blog</a>
+        <a href="../sobre.html" class="hidden md:block text-sm text-[#111111] hover:opacity-50 transition-opacity">Sobre</a>
+        <button id="nav-toggle" class="md:hidden p-1" aria-label="Abrir menu" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="3" width="20" height="2" rx="1" fill="#111111"/>
+            <rect y="9" width="20" height="2" rx="1" fill="#111111"/>
+            <rect y="15" width="20" height="2" rx="1" fill="#111111"/>
+          </svg>
+        </button>
+        <a href="mailto:contato@urbanview.media?subject=UrbanView - Solicitar demonstração" class="text-sm bg-[#FF7902] text-white px-4 py-1.5 rounded-[6px] hover:bg-[#D96500] transition-colors font-medium whitespace-nowrap">Solicitar demonstração</a>
+      </div>
+    </div>
+    <div id="nav-menu" class="hidden md:hidden border-t border-[#E5E5E5]">
+      <div class="max-w-5xl mx-auto px-4 py-3 flex flex-col">
+        <a href="../produto.html" class="text-sm text-[#111111] py-2.5 border-b border-[#F0F0F0] hover:opacity-50 transition-opacity">Produto</a>
+        <a href="../mercado.html" class="text-sm text-[#111111] py-2.5 border-b border-[#F0F0F0] hover:opacity-50 transition-opacity">Mercado</a>
+        <a href="index.html" class="text-sm py-2.5 border-b border-[#F0F0F0] font-medium" style="color:#FF7902;">Blog</a>
+        <a href="../sobre.html" class="text-sm text-[#111111] py-2.5 hover:opacity-50 transition-opacity">Sobre</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <article>
+      <section class="border-b border-[#E5E5E5]" style="padding-top:64px;padding-bottom:48px;">
+        <div class="container-inner" style="max-width:800px;">
+          <a href="index.html" class="label-accent" style="display:inline-block;margin-bottom:20px;">← Blog</a>
+          <h1 class="text-[32px] md:text-[42px] font-bold leading-[1.12] tracking-[-0.03em] text-[#111111]" style="max-width:700px;">
+            Da planilha ao sistema: migrar o inventário sem parar de vender
+          </h1>
+        </div>
+      </section>
+
+      <section style="padding-top:48px;padding-bottom:80px;">
+        <div class="container-inner" style="max-width:800px;">
+          <div class="post">
+            <p class="lead">A objeção é sempre a mesma, e é legítima: "não posso parar de vender para trocar de sistema". Ninguém pode. A migração de inventário em mídia exterior é feita em cima de uma operação rodando, com bi-semanas virando a cada 14 dias.</p>
+            <p>A boa notícia é que o inventário de uma exibidora, por maior que pareça, é um conjunto pequeno de dados bem definidos. O que costuma travar não é o volume: é a ordem em que as coisas entram.</p>
+            <h2>1. A planilha atual é o ponto de partida, não o inimigo</h2>
+            <p>A planilha de disponibilidade já contém quase tudo que importa: o código do ponto, o endereço, o formato, o sentido, o preço e o histórico de ocupação. Ela é a fonte da carga inicial, não algo a ser descartado e redigitado.</p>
+            <p>O trabalho de preparação é modesto e vale ser feito antes:</p>
+            <ul>
+              <li>Garantir que cada linha tenha um <strong>código único</strong> de ponto e de face;</li>
+              <li>Separar o que é local, o que é estrutura e o que é face, ainda que numa coluna improvisada;</li>
+              <li>Padronizar endereço, para que a geocodificação acerte de primeira;</li>
+              <li>Marcar o que está inativo e por quê, em vez de simplesmente apagar a linha.</li>
+            </ul>
+            <h2>2. Geocodificar é parte da carga</h2>
+            <p>Ponto de mídia exterior sem coordenada é meio ponto. Sem ela não há mapa na proposta, não há roteirização de campo, não há camada geográfica e não há como amarrar a foto de checking ao local correto. A geocodificação entra junto com a importação, não como um projeto para depois.</p>
+            <h2>3. A ordem que mantém a operação de pé</h2>
+            <p>Esta é a parte que decide se a migração é tranquila ou traumática. A sequência que funciona vai do que impede a entrada até o que refina a gestão:</p>
+            <ul>
+              <li><strong>Inventário importado</strong>, porque sem ele nada mais existe;</li>
+              <li><strong>Tipos, documentos e ciclo do ativo</strong>, para o cadastro representar o inventário real;</li>
+              <li><strong>Usuários e papéis</strong>, para mais de uma pessoa poder operar;</li>
+              <li><strong>Grade confiável</strong>, com trava de overbooking e reserva com prazo;</li>
+              <li><strong>Preços e proposta</strong>, que é quando o comercial abandona o PowerPoint;</li>
+              <li><strong>Pedido, faturamento e nota</strong>, que traz o financeiro para dentro;</li>
+              <li><strong>Produção e campo</strong>, tirando a operação do grupo de mensagens;</li>
+              <li><strong>Checking e comprovação</strong>, fechando o ciclo;</li>
+              <li><strong>Custos e rentabilidade</strong>, que só faz sentido quando o resto já registra.</li>
+            </ul>
+            <p>Cada etapa remove uma planilha paralela e funciona sozinha. Nenhuma delas exige que a seguinte já esteja pronta para dar resultado, e é isso que permite entrar aos poucos.</p>
+            <h2>4. O período de convivência</h2>
+            <p>Durante algumas bi-semanas, sistema e planilha convivem. Isso é normal e deve ter data para acabar. Duas regras evitam que a convivência vire permanente:</p>
+            <ul>
+              <li>A partir de uma bi-semana escolhida, <strong>toda nova reserva nasce no sistema</strong>, sem exceção;</li>
+              <li>A planilha vira consulta do passado, e ninguém mais edita célula nela.</li>
+            </ul>
+            <p>Sem essas duas regras, a equipe mantém as duas bases atualizadas por educação, erra em uma delas por cansaço, e conclui que o sistema não funcionou.</p>
+            <h2>5. O que medir para saber que deu certo</h2>
+            <p>Três sinais mostram que a migração pegou, e nenhum deles é a quantidade de telas usadas:</p>
+            <ul>
+              <li>A resposta sobre disponibilidade é dada na hora, sem "vou confirmar e te retorno";</li>
+              <li>A proposta sai do sistema, com mapa e foto, sem alguém montar apresentação;</li>
+              <li>A comprovação da campanha é entregue no primeiro pedido do cliente.</li>
+            </ul>
+            <p>Quando esses três acontecem, a planilha para de ser aberta sozinha. Não é preciso proibi-la.</p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <!-- OUTROS POSTS -->
+    <section class="border-t border-[#E5E5E5]" style="padding-top:64px;padding-bottom:64px;">
+      <div class="container-inner" style="max-width:800px;">
+        <p class="label-accent mb-6">Continue lendo</p>
+        <a href="overbooking-em-midia-exterior.html" class="post-card">
+          <h2>Overbooking: como duas vendas caem na mesma face</h2>
+          <p>Duas campanhas vendidas para a mesma face na mesma bi-semana. O erro só aparece no dia da instalação, e alguém vai ficar sem o ponto. Como ele acontece e por que aviso de tela não resolve.</p>
+          <span>Leia mais →</span>
+        </a>
+
+        <a href="local-estrutura-face.html" class="post-card">
+          <h2>Local, estrutura e face: os três níveis do inventário</h2>
+          <p>Não se vende "um outdoor". O inventário tem três níveis, e confundir os três é o erro de cadastro mais caro do setor: impede representar triedro, trocar a estrutura mantendo o ponto e vender cada face separadamente.</p>
+          <span>Leia mais →</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section style="padding-top:96px;padding-bottom:96px;background:#FF7902;">
+      <div class="container-inner" style="text-align:center;">
+        <h2 class="text-[26px] md:text-[38px] font-bold leading-[1.15] tracking-tight text-white mb-5">
+          Você opera mídia exterior?
+        </h2>
+        <p class="text-[15px] md:text-[17px] leading-[1.7] mb-8" style="color:#FFE6CE;max-width:460px;margin-left:auto;margin-right:auto;">
+          O UrbanView põe o seu inventário, a sua grade e o seu faturamento no mesmo sistema.
+        </p>
+        <a href="mailto:contato@urbanview.media?subject=UrbanView - Solicitar demonstração" class="btn-on-orange">Solicitar demonstração</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-[#E5E5E5]">
+    <div class="max-w-5xl mx-auto px-4 md:px-8 py-10 md:py-14 flex flex-col md:flex-row gap-10 md:gap-16">
+      <div class="flex-shrink-0 md:min-w-[220px]">
+        <img src="../assets/urbanview.png" alt="UrbanView" class="h-6 w-auto mb-5" width="1305" height="160">
+        <p class="text-[12px] text-[#BBBBBB] mb-1">© 2026 Setbox Serviços Digitais</p>
+        <p class="text-[12px] text-[#BBBBBB]">Av. Carneiro Leão, 563 - Zona 01<br>Maringá / PR - 87014-010</p>
+        <p class="text-[12px] text-[#BBBBBB]">CNPJ 08.889.601/0001-09</p>
+      </div>
+      <div class="flex-1">
+        <p class="text-[12px] font-semibold text-[#111111] mb-4">UrbanView</p>
+        <ul class="space-y-2.5">
+          <li><a href="../produto.html" class="link-footer">Produto</a></li>
+          <li><a href="../mercado.html" class="link-footer">Mercado</a></li>
+          <li><a href="index.html" class="link-footer">Blog</a></li>
+          <li><a href="../sobre.html" class="link-footer">Sobre</a></li>
+        </ul>
+      </div>
+      <div class="flex-1">
+        <p class="text-[12px] font-semibold text-[#111111] mb-4">Contato</p>
+        <ul class="space-y-2.5">
+          <li><a href="mailto:contato@urbanview.media" class="link-footer">contato@urbanview.media</a></li>
+          <li><a href="tel:+5541999073688" class="link-footer">(41) 99907-3688</a></li>
+        </ul>
+      </div>
+      <div class="flex-1">
+        <p class="text-[12px] font-semibold text-[#111111] mb-4">Institucional</p>
+        <ul class="space-y-2.5">
+          <li><a href="../faq.html" class="link-footer">Perguntas frequentes</a></li>
+          <li><a href="../termos-de-uso.html" class="link-footer">Termos de Uso</a></li>
+          <li><a href="../politica-de-privacidade.html" class="link-footer">Política de Privacidade</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('nav-toggle').addEventListener('click', function() {
+      var menu = document.getElementById('nav-menu');
+      menu.classList.toggle('hidden');
+      this.setAttribute('aria-expanded', String(!menu.classList.contains('hidden')));
+    });
+  </script>
+</body>
+</html>

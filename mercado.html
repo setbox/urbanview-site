@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Como funciona o mercado de mídia exterior no Brasil: inventário em três níveis, calendário de bi-semanas, cadeia comercial, normas da Central de Outdoor e métricas de audiência OOH.">
+  <link rel="canonical" href="https://urbanview.media/mercado.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="UrbanView">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://urbanview.media/mercado.html">
+  <meta property="og:title" content="Mercado - UrbanView">
+  <meta property="og:description" content="Como funciona o mercado de mídia exterior no Brasil: inventário em três níveis, calendário de bi-semanas, cadeia comercial, normas e métricas de audiência.">
+  <meta property="og:image" content="https://urbanview.media/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mercado - UrbanView">
+  <meta name="twitter:description" content="Inventário em três níveis, bi-semana, cadeia comercial, normas da Central de Outdoor e métricas de audiência OOH.">
+  <meta name="twitter:image" content="https://urbanview.media/assets/og-image.png">
+  <title>Mercado - UrbanView</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="assets/site.webmanifest">
+  <meta name="theme-color" content="#FF7902">
+  <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preload" href="assets/fonts/wotfard-regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/fonts/wotfard-bold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="assets/brand.css">
+  <script>
+    tailwind.config = { theme: { extend: { fontFamily: { sans: ['Wotfard','Inter','system-ui','-apple-system','sans-serif'] } } } }
+  </script>
+</head>
+<body class="font-sans antialiased">
+
+  <!-- Nav -->
+  <nav class="sticky top-0 z-50 bg-[#FAFAFA] border-b border-[#E5E5E5]">
+    <div class="max-w-5xl mx-auto px-4 md:px-8 h-14 flex items-center justify-between">
+      <a href="index.html"><img src="assets/urbanview.png" alt="UrbanView" class="h-6 w-auto" width="1305" height="160"></a>
+      <div class="flex items-center gap-4 md:gap-7">
+        <a href="produto.html" class="hidden md:block text-sm text-[#111111] hover:opacity-50 transition-opacity">Produto</a>
+        <a href="mercado.html" class="hidden md:block text-sm font-medium" style="color:#FF7902;">Mercado</a>
+        <a href="blog/" class="hidden md:block text-sm text-[#111111] hover:opacity-50 transition-opacity">Blog</a>
+        <a href="sobre.html" class="hidden md:block text-sm text-[#111111] hover:opacity-50 transition-opacity">Sobre</a>
+        <button id="nav-toggle" class="md:hidden p-1" aria-label="Abrir menu" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="3" width="20" height="2" rx="1" fill="#111111"/>
+            <rect y="9" width="20" height="2" rx="1" fill="#111111"/>
+            <rect y="15" width="20" height="2" rx="1" fill="#111111"/>
+          </svg>
+        </button>
+        <a href="mailto:contato@urbanview.media?subject=UrbanView - Solicitar demonstração" class="text-sm bg-[#FF7902] text-white px-4 py-1.5 rounded-[6px] hover:bg-[#D96500] transition-colors font-medium whitespace-nowrap">Solicitar demonstração</a>
+      </div>
+    </div>
+    <div id="nav-menu" class="hidden md:hidden border-t border-[#E5E5E5]">
+      <div class="max-w-5xl mx-auto px-4 py-3 flex flex-col">
+        <a href="produto.html" class="text-sm text-[#111111] py-2.5 border-b border-[#F0F0F0] hover:opacity-50 transition-opacity">Produto</a>
+        <a href="mercado.html" class="text-sm py-2.5 border-b border-[#F0F0F0] font-medium" style="color:#FF7902;">Mercado</a>
+        <a href="blog/" class="text-sm text-[#111111] py-2.5 border-b border-[#F0F0F0] hover:opacity-50 transition-opacity">Blog</a>
+        <a href="sobre.html" class="text-sm text-[#111111] py-2.5 hover:opacity-50 transition-opacity">Sobre</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="border-b border-[#E5E5E5]" style="padding-top:80px;padding-bottom:64px;">
+      <div class="container-inner">
+        <p class="label-accent mb-4">Mercado</p>
+        <h1 class="text-[34px] md:text-[46px] font-bold leading-[1.08] tracking-[-0.03em] text-[#111111] mb-6" style="max-width:720px;">
+          As regras que valem para toda exibidora
+        </h1>
+        <p class="text-[15px] md:text-[17px] leading-[1.7] text-[#555555]" style="max-width:640px;">
+          Mídia exterior tem unidade de venda, unidade de tempo, cadeia de intermediários e normas próprias. O software que ignora qualquer uma delas obriga a exibidora a manter a planilha ao lado.
+        </p>
+      </div>
+    </section>
+
+    <!-- INVENTÁRIO -->
+    <section class="border-b border-[#E5E5E5]" style="padding-top:80px;padding-bottom:80px;">
+      <div class="container-inner">
+        <div class="two-col" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;">
+          <div>
+            <p class="label-accent mb-3">Inventário</p>
+            <h2 class="text-[26px] md:text-[32px] font-bold leading-[1.2] tracking-tight text-[#111111] mb-5">
+              O que se vende é a face, não o painel
+            </h2>
+            <p class="text-[15px] leading-[1.8] text-[#555555] mb-4">
+              O inventário tem três níveis. O <strong>local</strong> é o terreno, a parede ou a loja, e é o objeto do contrato de locação. A <strong>estrutura</strong> é o ativo instalado ali. A <strong>face</strong> é cada lado visível de uma via, e é a unidade comercial.
+            </p>
+            <p class="text-[15px] leading-[1.8] text-[#555555]">
+              Um triedro é uma estrutura com três faces, uma tabuleta tem duas. Sistema que confunde os três níveis não consegue trocar a estrutura mantendo o ponto, nem vender uma face de cada vez.
+            </p>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <div class="border border-[#E5E5E5] rounded-xl bg-white p-5">
+              <div class="text-[11px] font-semibold uppercase tracking-wide mb-1" style="color:#8248E4;">Nível 1</div>
+              <div class="text-[15px] font-semibold text-[#111111] mb-1">Local</div>
+              <div class="text-[13px] leading-[1.7] text-[#555555]">Terreno, empena ou fachada de terceiro. Contrato, aluguel, reajuste e renovação vivem aqui.</div>
+            </div>
+            <div class="border border-[#E5E5E5] rounded-xl bg-white p-5" style="margin-left:24px;">
+              <div class="text-[11px] font-semibold uppercase tracking-wide mb-1" style="color:#8248E4;">Nível 2</div>
+              <div class="text-[15px] font-semibold text-[#111111] mb-1">Estrutura</div>
+              <div class="text-[13px] leading-[1.7] text-[#555555]">Outdoor, frontlight, painel rodoviário, empena ou tela. É o patrimônio, com alvará e manutenção.</div>
+            </div>
+            <div class="border rounded-xl p-5" style="margin-left:48px;border-color:#FFD2A8;background:#FFF3E8;">
+              <div class="text-[11px] font-semibold uppercase tracking-wide mb-1" style="color:#A34E00;">Nível 3</div>
+              <div class="text-[15px] font-semibold text-[#111111] mb-1">Face</div>
+              <div class="text-[13px] leading-[1.7] text-[#555555]">O que entra na proposta e no PI. Tem preço, classe comercial, audiência e ocupação por bi-semana.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BI-SEMANA -->
+    <section class="border-b border-[#E5E5E5]" style="padding-top:80px;padding-bottom:80px;background:#FFF3E8;">
+      <div class="container-inner">
+        <div class="two-col" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;">
+          <div>
+            <p class="label-accent mb-3">Calendário</p>
+            <h2 class="text-[26px] md:text-[32px] font-bold leading-[1.2] tracking-tight text-[#111111] mb-5">
+              A unidade de tempo é a bi-semana
+            </h2>
+            <p class="text-[15px] leading-[1.8] text-[#555555] mb-4">
+              O ano comercial de mídia exterior é dividido em cerca de 26 períodos de 14 dias, numerados com números pares. A bi-semana 02 de 2026 é 02/01 a 15/01.
+            </p>
+            <p class="text-[15px] leading-[1.8] text-[#555555] mb-4">
+              Preço, reserva e disponibilidade são todos expressos por bi-semana. A grade de face por bi-semana é a tela central de qualquer ERP do setor, e é onde nasce o erro mais caro do mercado, a venda dobrada.
+            </p>
+            <p class="text-[15px] leading-[1.8] text-[#555555]">
+              A bi-semana não vendida não vira estoque parado: ela evapora. Por isso ociosidade, desconto de fechamento e calhau são decisões de calendário, não de armazém.
+            </p>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <div class="border border-[#F0DCC6] rounded-xl bg-white p-5">
+              <div class="text-[15px] font-semibold text-[#111111] mb-1">14 dias por período</div>
+              <div class="text-[13px] leading-[1.7] text-[#555555]">Duas grades paralelas convivem no ano, uma iniciando na segunda e outra no sábado.</div>
+            </div>
+            <div class="border border-[#F0DCC6] rounded-xl bg-white p-5">
+              <div class="text-[15px] font-semibold text-[#111111] mb-1">Autorização até 4 dias antes</div>
+              <div class="text-[13px] leading-[1.7] text-[#555555]">O pedido precisa estar confirmado antes do início da bi-semana para entrar na virada.</div>
+            </div>
+            <div class="border border-[#F0DCC6] rounded-xl bg-white p-5">
+              <div class="text-[15px] font-semibold text-[#111111] mb-1">Face ociosa recebe calhau</div>
+              <div class="text-[13px] leading-[1.7] text-[#555555]">Mensagem institucional cobre o quadro vazio, com nome e regra próprios no setor.</div>
+            </div>
+            <div class="border border-[#F0DCC6] rounded-xl bg-white p-5">
+              <div class="text-[15px] font-semibold text-[#111111] mb-1">Cerca de 100 faces por equipe</div>
+              <div class="text-[13px] leading-[1.7] text-[#555555]">A virada completa de um inventário desse tamanho consome cerca de dez dias-equipe.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CADEIA -->
+    <section class="border-b border-[#E5E5E5]" style="padding-top:80px;padding-bottom:80px;">
+      <div class="container-inner">
+        <div style="text-align:center;margin-bottom:48px;">
+          <p class="label-accent mb-3">Cadeia comercial</p>
+          <h2 class="text-[26px] md:text-[38px] font-bold leading-[1.15] tracking-tight text-[#111111] mb-4">
+            Quatro papéis, e o dinheiro passa por todos
+          </h2>
+          <p class="text-[15px] leading-[1.7] text-[#555555]" style="max-width:600px;margin:0 auto;">
+            O modelo de dados precisa dos quatro desde o primeiro dia, mesmo que as telas de cada um venham depois.
+          </p>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;" class="stats-grid">
+          <div class="border border-[#E5E5E5] rounded-xl bg-white p-5">
+            <div class="text-[11px] font-semibold uppercase tracking-wide mb-2" style="color:#8248E4;">Paga</div>
+            <div class="text-[16px] font-semibold text-[#111111] mb-1.5">Anunciante</div>
+            <div class="text-[13px] leading-[1.7] text-[#555555]">A marca que quer aparecer na rua. Define verba e praça.</div>
+          </div>
+          <div class="border border-[#E5E5E5] rounded-xl bg-white p-5">
+            <div class="text-[11px] font-semibold uppercase tracking-wide mb-2" style="color:#8248E4;">Planeja</div>
+            <div class="text-[16px] font-semibold text-[#111111] mb-1.5">Agência</div>
+            <div class="text-[13px] leading-[1.7] text-[#555555]">Monta o plano de mídia e recebe comissão de cerca de 20% sobre o investido.</div>
+          </div>
+          <div class="border border-[#E5E5E5] rounded-xl bg-white p-5">
+            <div class="text-[11px] font-semibold uppercase tracking-wide mb-2" style="color:#8248E4;">Vende</div>
+            <div class="text-[16px] font-semibold text-[#111111] mb-1.5">Representante</div>
+            <div class="text-[13px] leading-[1.7] text-[#555555]">Leva carteira própria e negocia inventário de uma ou mais exibidoras.</div>
+          </div>
+          <div class="border rounded-xl p-5" style="border-color:#FFD2A8;background:#FFF3E8;">
+            <div class="text-[11px] font-semibold uppercase tracking-wide mb-2" style="color:#A34E00;">Entrega</div>
+            <div class="text-[16px] font-semibold text-[#111111] mb-1.5">Exibidora</div>
+            <div class="text-[13px] leading-[1.7] text-[#555555]">Dona do inventário, responsável pela veiculação e pela prova. É quem usa o UrbanView.</div>
+          </div>
+        </div>
+        <div class="border border-[#E5E5E5] rounded-xl bg-white p-6 mt-6">
+          <p class="text-[14px] leading-[1.8] text-[#444444]">
+            <strong>Comissão de agência e BV não são a mesma coisa.</strong> A comissão sai do valor pago pelo cliente e remunera o planejamento. O bônus de volume sai do bolso da exibidora e é negociado sobre o acumulado do ano. Somar os dois no mesmo campo é o jeito mais rápido de errar a margem do PI.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NORMAS -->
+    <section class="border-b border-[#E5E5E5]" style="padding-top:80px;padding-bottom:80px;background:#F3EDFD;">
+      <div class="container-inner">
+        <div class="two-col" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;">
+          <div>
+            <p class="label-roxo mb-3">Normas e licenciamento</p>
+            <h2 class="text-[26px] md:text-[32px] font-bold leading-[1.2] tracking-tight text-[#111111] mb-5">
+              A geometria do inventário é regulada
+            </h2>
+            <p class="text-[15px] leading-[1.8] text-[#444444] mb-4">
+              O guia de procedimentos da Central de Outdoor é autorregulação do setor, não lei, mas define o que o mercado aceita como quadro válido. A prefeitura entra por cima disso, com alvará anual por ponto.
+            </p>
+            <p class="text-[15px] leading-[1.8] text-[#444444]">
+              Manter um outdoor sem autorização do proprietário do imóvel é infração do código de ética do setor, ainda que em caráter precário.
+            </p>
+          </div>
+          <div class="table-wrap">
+            <table class="uv-table">
+              <tbody>
+                <tr><td style="width:44%;"><strong>Formatos padrão</strong></td><td>9 × 3 m e 6 × 3 m, de 1 a 4 pés, com versões iluminada e digital</td></tr>
+                <tr><td><strong>Rarefação</strong></td><td>Mínimo de 50 m entre quadros de empresas diferentes</td></tr>
+                <tr><td><strong>Agrupamento</strong></td><td>Máximo de 3 quadros por lote</td></tr>
+                <tr><td><strong>Espaçamento</strong></td><td>De 0,50 m a 5 m entre peças</td></tr>
+                <tr><td><strong>Alvará</strong></td><td>Anual e por ponto, com processo administrativo próprio</td></tr>
+                <tr><td><strong>Poda</strong></td><td>Só com autorização municipal, e vira ordem de serviço</td></tr>
+                <tr><td><strong>Face ociosa</strong></td><td>Recebe mensagem institucional, o calhau</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUDIÊNCIA -->
+    <section class="border-b border-[#E5E5E5]" style="padding-top:80px;padding-bottom:80px;">
+      <div class="container-inner">
+        <div style="text-align:center;margin-bottom:48px;">
+          <p class="label-accent mb-3">Audiência</p>
+          <h2 class="text-[26px] md:text-[38px] font-bold leading-[1.15] tracking-tight text-[#111111] mb-4">
+            Sem métrica não se disputa verba de agência
+          </h2>
+          <p class="text-[15px] leading-[1.7] text-[#555555]" style="max-width:620px;margin:0 auto;">
+            O guia de métricas OOH da ABA define uma cadeia de três medidas. A auditoria de mercado quer poder substituir a foto pela apuração documental.
+          </p>
+        </div>
+        <div class="three-col" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
+          <div class="border border-[#E5E5E5] rounded-xl bg-white p-6">
+            <div class="text-[11px] font-semibold uppercase tracking-wide mb-2" style="color:#FF7902;">Etapa 1</div>
+            <h3 class="text-[16px] font-semibold text-[#111111] mb-2">OTS</h3>
+            <p class="text-[13px] leading-[1.7] text-[#555555]">Oportunidade de ver: quanta gente passa pelo ponto no período.</p>
+          </div>
+          <div class="border border-[#E5E5E5] rounded-xl bg-white p-6">
+            <div class="text-[11px] font-semibold uppercase tracking-wide mb-2" style="color:#FF7902;">Etapa 2</div>
+            <h3 class="text-[16px] font-semibold text-[#111111] mb-2">PTS</h3>
+            <p class="text-[13px] leading-[1.7] text-[#555555]">Probabilidade de ver, ajustada por tamanho, altura, inclinação, iluminação, tipo e ambiente.</p>
+          </div>
+          <div class="border border-[#E5E5E5] rounded-xl bg-white p-6">
+            <div class="text-[11px] font-semibold uppercase tracking-wide mb-2" style="color:#FF7902;">Etapa 3</div>
+            <h3 class="text-[16px] font-semibold text-[#111111] mb-2">GRP</h3>
+            <p class="text-[13px] leading-[1.7] text-[#555555]">Audiência bruta sobre o universo da praça, com alcance e frequência derivados.</p>
+          </div>
+        </div>
+        <div class="border border-[#E5E5E5] rounded-xl bg-white p-6 mt-6">
+          <p class="text-[14px] leading-[1.8] text-[#444444]">
+            O guia pede a entrega de GRP, alcance e frequência <strong>por face, por conjunto e por exibidora</strong>, exportáveis via API. A auditoria de inventário exige cadastro em layout padronizado, rastro contábil por ponto e ordem de serviço com despesa comprovada. Quem só tem planilha não passa nessa porta.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GLOSSÁRIO -->
+    <section class="border-b border-[#E5E5E5]" style="padding-top:80px;padding-bottom:80px;background:#000000;">
+      <div class="container-inner">
+        <div style="text-align:center;margin-bottom:48px;">
+          <p class="text-[11px] font-semibold tracking-wide uppercase mb-3" style="color:#FF7902;">Vocabulário</p>
+          <h2 class="text-[26px] md:text-[38px] font-bold leading-[1.15] tracking-tight text-white">
+            Nove termos que aparecem em toda conversa
+          </h2>
+        </div>
+        <div class="three-col" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;">
+          <div style="border:1px solid #2A2A2A;border-radius:12px;padding:18px;background:#0B0B0B;">
+            <div class="text-[14px] font-semibold text-white mb-1.5">Face</div>
+            <div class="text-[13px] leading-[1.7]" style="color:#AAAAAA;">Cada lado visível de uma estrutura. A unidade de venda.</div>
+          </div>
+          <div style="border:1px solid #2A2A2A;border-radius:12px;padding:18px;background:#0B0B0B;">
+            <div class="text-[14px] font-semibold text-white mb-1.5">Bi-semana</div>
+            <div class="text-[13px] leading-[1.7]" style="color:#AAAAAA;">Período de 14 dias, numerado com número par. A unidade de tempo.</div>
+          </div>
+          <div style="border:1px solid #2A2A2A;border-radius:12px;padding:18px;background:#0B0B0B;">
+            <div class="text-[14px] font-semibold text-white mb-1.5">PI</div>
+            <div class="text-[13px] leading-[1.7]" style="color:#AAAAAA;">Pedido de inserção: o contrato da campanha, numerado e com pagadores.</div>
+          </div>
+          <div style="border:1px solid #2A2A2A;border-radius:12px;padding:18px;background:#0B0B0B;">
+            <div class="text-[14px] font-semibold text-white mb-1.5">Checking</div>
+            <div class="text-[13px] leading-[1.7]" style="color:#AAAAAA;">Foto que comprova a veiculação e libera o faturamento.</div>
+          </div>
+          <div style="border:1px solid #2A2A2A;border-radius:12px;padding:18px;background:#0B0B0B;">
+            <div class="text-[14px] font-semibold text-white mb-1.5">Calhau</div>
+            <div class="text-[13px] leading-[1.7]" style="color:#AAAAAA;">Mensagem institucional que ocupa a face sem anunciante.</div>
+          </div>
+          <div style="border:1px solid #2A2A2A;border-radius:12px;padding:18px;background:#0B0B0B;">
+            <div class="text-[14px] font-semibold text-white mb-1.5">BV</div>
+            <div class="text-[13px] leading-[1.7]" style="color:#AAAAAA;">Bônus de volume pago pela exibidora, diferente da comissão de agência.</div>
+          </div>
+          <div style="border:1px solid #2A2A2A;border-radius:12px;padding:18px;background:#0B0B0B;">
+            <div class="text-[14px] font-semibold text-white mb-1.5">Permuta</div>
+            <div class="text-[13px] leading-[1.7]" style="color:#AAAAAA;">Tipo de negociação, não desconto. Tem efeito fiscal próprio.</div>
+          </div>
+          <div style="border:1px solid #2A2A2A;border-radius:12px;padding:18px;background:#0B0B0B;">
+            <div class="text-[14px] font-semibold text-white mb-1.5">Carpeta</div>
+            <div class="text-[13px] leading-[1.7]" style="color:#AAAAAA;">Ficha do ponto com foto, mapa, formato e audiência, usada na venda.</div>
+          </div>
+          <div style="border:1px solid #2A2A2A;border-radius:12px;padding:18px;background:#0B0B0B;">
+            <div class="text-[14px] font-semibold text-white mb-1.5">Virada</div>
+            <div class="text-[13px] leading-[1.7]" style="color:#AAAAAA;">Troca das lonas na passagem de uma bi-semana para a seguinte.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section style="padding-top:96px;padding-bottom:96px;background:#FF7902;">
+      <div class="container-inner" style="text-align:center;">
+        <h2 class="text-[26px] md:text-[38px] font-bold leading-[1.15] tracking-tight text-white mb-5">
+          Um sistema que já fala essa língua
+        </h2>
+        <p class="text-[15px] md:text-[17px] leading-[1.7] mb-8" style="color:#FFE6CE;max-width:480px;margin-left:auto;margin-right:auto;">
+          Bi-semana, face, PI, checking e calhau não são customização no UrbanView. São o modelo de dados.
+        </p>
+        <a href="mailto:contato@urbanview.media?subject=UrbanView - Solicitar demonstração" class="btn-on-orange">Solicitar demonstração</a>
+        <div class="mt-4">
+          <a href="produto.html" class="inline-flex items-center gap-2 text-[14px] font-medium hover:opacity-70 transition-opacity" style="color:#FFE6CE;">Ver o produto →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-[#E5E5E5]">
+    <div class="max-w-5xl mx-auto px-4 md:px-8 py-10 md:py-14 flex flex-col md:flex-row gap-10 md:gap-16">
+      <div class="flex-shrink-0 md:min-w-[220px]">
+        <img src="assets/urbanview.png" alt="UrbanView" class="h-6 w-auto mb-5" width="1305" height="160">
+        <p class="text-[12px] text-[#BBBBBB] mb-1">© 2026 Setbox Serviços Digitais</p>
+        <p class="text-[12px] text-[#BBBBBB]">Av. Carneiro Leão, 563 - Zona 01<br>Maringá / PR - 87014-010</p>
+        <p class="text-[12px] text-[#BBBBBB]">CNPJ 08.889.601/0001-09</p>
+      </div>
+      <div class="flex-1">
+        <p class="text-[12px] font-semibold text-[#111111] mb-4">UrbanView</p>
+        <ul class="space-y-2.5">
+          <li><a href="produto.html" class="link-footer">Produto</a></li>
+          <li><a href="mercado.html" class="link-footer">Mercado</a></li>
+          <li><a href="blog/" class="link-footer">Blog</a></li>
+          <li><a href="sobre.html" class="link-footer">Sobre</a></li>
+        </ul>
+      </div>
+      <div class="flex-1">
+        <p class="text-[12px] font-semibold text-[#111111] mb-4">Contato</p>
+        <ul class="space-y-2.5">
+          <li><a href="mailto:contato@urbanview.media" class="link-footer">contato@urbanview.media</a></li>
+          <li><a href="tel:+5541999073688" class="link-footer">(41) 99907-3688</a></li>
+        </ul>
+      </div>
+      <div class="flex-1">
+        <p class="text-[12px] font-semibold text-[#111111] mb-4">Institucional</p>
+        <ul class="space-y-2.5">
+          <li><a href="faq.html" class="link-footer">Perguntas frequentes</a></li>
+          <li><a href="termos-de-uso.html" class="link-footer">Termos de Uso</a></li>
+          <li><a href="politica-de-privacidade.html" class="link-footer">Política de Privacidade</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('nav-toggle').addEventListener('click', function() {
+      var menu = document.getElementById('nav-menu');
+      menu.classList.toggle('hidden');
+      this.setAttribute('aria-expanded', String(!menu.classList.contains('hidden')));
+    });
+  </script>
+</body>
+</html>
