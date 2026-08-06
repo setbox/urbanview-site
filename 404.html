@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Página não encontrada.">
+  <meta name="description" content="Página não encontrada no site do UrbanView.">
   <link rel="canonical" href="https://urbanview.media/404.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="UrbanView">
@@ -15,6 +15,7 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="404 - UrbanView">
   <meta name="twitter:description" content="Página não encontrada.">
+  <meta name="robots" content="noindex">
   <title>404 - UrbanView</title>
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
@@ -25,12 +26,15 @@
   <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preload" href="assets/fonts/wotfard-bold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="alternate" type="application/rss+xml" title="Blog UrbanView" href="feed.xml">
   <link rel="stylesheet" href="assets/brand.css">
   <script>
     tailwind.config = { theme: { extend: { fontFamily: { sans: ['Wotfard','Inter','system-ui','-apple-system','sans-serif'] } } } }
   </script>
 </head>
 <body class="font-sans antialiased">
+
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
   <nav class="sticky top-0 z-50 bg-[#FAFAFA] border-b border-[#E5E5E5]">
     <div class="max-w-5xl mx-auto px-4 md:px-8 h-14 flex items-center justify-between">
@@ -47,7 +51,7 @@
             <rect y="15" width="20" height="2" rx="1" fill="#111111"/>
           </svg>
         </button>
-        <a href="mailto:contato@urbanview.media?subject=UrbanView - Solicitar demonstração" class="text-sm bg-[#FF7902] text-white px-4 py-1.5 rounded-[6px] hover:bg-[#D96500] transition-colors font-medium whitespace-nowrap">Solicitar demonstração</a>
+        <a href="mailto:contato@urbanview.media?subject=UrbanView - Solicitar demonstração" class="text-sm bg-[#FF7902] text-[#000000] px-4 py-1.5 rounded-[6px] hover:bg-[#D96500] transition-colors font-medium whitespace-nowrap">Solicitar demonstração</a>
       </div>
     </div>
     <div id="nav-menu" class="hidden md:hidden border-t border-[#E5E5E5]">
@@ -60,32 +64,155 @@
     </div>
   </nav>
 
-  <main>
-    <section style="padding-top:128px;padding-bottom:160px;">
-      <div class="container-inner" style="text-align:center;max-width:720px;">
-        <p class="label-accent mb-4">Erro 404</p>
-        <h1 class="text-[64px] md:text-[96px] font-bold leading-none tracking-[-0.04em] text-[#111111] mb-6">404</h1>
-        <p class="text-[17px] leading-[1.7] text-[#555555] mb-10">Esta face está livre. A página que você procurava não existe</p>
-        <a href="index.html" class="btn-primary">← Voltar ao início</a>
+  <main id="conteudo" tabindex="-1">
+
+    <!-- 404 -->
+    <section class="border-b border-[#E5E5E5]" style="padding-top:96px;padding-bottom:96px;">
+      <div class="container-inner">
+        <div class="two-col" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;">
+          <div>
+            <p class="label-accent mb-4">Erro 404</p>
+            <h1 class="text-[38px] md:text-[52px] font-bold leading-[1.05] tracking-[-0.03em] text-[#111111] mb-6">
+              Esta face está livre
+            </h1>
+            <p class="text-[15px] md:text-[17px] leading-[1.7] text-[#555555] mb-8">
+              A página que você procurava não existe, mudou de endereço ou nunca chegou a ser instalada. Nada que uma bi-semana não resolva.
+            </p>
+            <div class="hero-cta" style="display:flex;flex-wrap:wrap;gap:12px;">
+              <a href="index.html" class="btn-primary">← Voltar ao início</a>
+              <a href="blog/" class="btn-ghost">Ler o blog</a>
+            </div>
+          </div>
+          <div class="border border-[#E5E5E5] rounded-xl bg-white p-6">
+            <p class="text-[11px] font-semibold tracking-wide uppercase text-[#6B6B6B] mb-4">Grade de ocupação · bi-semanas</p>
+            <div style="display:grid;grid-template-columns:auto repeat(6,1fr);gap:4px;align-items:center;">
+              <span class="grid-head"></span>
+              <span class="grid-head">02</span>
+              <span class="grid-head">04</span>
+              <span class="grid-head">06</span>
+              <span class="grid-head">08</span>
+              <span class="grid-head">10</span>
+              <span class="grid-head">12</span>
+
+              <span class="grid-face">A-404/1</span>
+              <span class="cell cell-livre"></span>
+              <span class="cell cell-livre"></span>
+              <span class="cell cell-livre"></span>
+              <span class="cell cell-livre"></span>
+              <span class="cell cell-livre"></span>
+              <span class="cell cell-livre"></span>
+
+              <span class="grid-face">A-404/2</span>
+              <span class="cell cell-livre"></span>
+              <span class="cell cell-livre"></span>
+              <span class="cell cell-livre"></span>
+              <span class="cell cell-livre"></span>
+              <span class="cell cell-livre"></span>
+              <span class="cell cell-livre"></span>
+
+              <span class="grid-face">B-404/1</span>
+              <span class="cell cell-livre"></span>
+              <span class="cell cell-livre"></span>
+              <span class="cell cell-livre"></span>
+              <span class="cell cell-livre"></span>
+              <span class="cell cell-livre"></span>
+              <span class="cell cell-livre"></span>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:18px;">
+              <span class="legend"><i class="cell cell-livre"></i>Tudo livre por aqui</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
+    <!-- ATALHOS -->
+    <section style="padding-top:72px;padding-bottom:96px;">
+      <div class="container-inner">
+        <p class="label-accent mb-6">Talvez você procurasse</p>
+        <div class="three-col" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
+          <a href="produto.html" class="border border-[#E5E5E5] rounded-xl bg-white p-6 block hover:border-[#FF7902] transition-colors">
+            <h2 class="text-[16px] font-semibold tracking-tight text-[#111111] mb-2">Produto</h2>
+            <p class="text-[14px] leading-[1.7] text-[#555555]">Os 13 módulos do ERP, a ordem de implantação e o que fica fora de escopo.</p>
+          </a>
+          <a href="mercado.html" class="border border-[#E5E5E5] rounded-xl bg-white p-6 block hover:border-[#FF7902] transition-colors">
+            <h2 class="text-[16px] font-semibold tracking-tight text-[#111111] mb-2">Mercado</h2>
+            <p class="text-[14px] leading-[1.7] text-[#555555]">Bi-semana, face, cadeia comercial, normas do setor e métricas de audiência.</p>
+          </a>
+          <a href="blog/" class="border border-[#E5E5E5] rounded-xl bg-white p-6 block hover:border-[#FF7902] transition-colors">
+            <h2 class="text-[16px] font-semibold tracking-tight text-[#111111] mb-2">Blog</h2>
+            <p class="text-[14px] leading-[1.7] text-[#555555]">Como a mídia exterior funciona por dentro, explicada sem jargão.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="border-t border-[#E5E5E5]">
-    <div class="max-w-5xl mx-auto px-4 md:px-8 py-10 md:py-14">
-      <img src="assets/urbanview.png" alt="UrbanView" class="h-6 w-auto mb-5" width="1305" height="160">
-      <p class="text-[12px] text-[#BBBBBB] mb-1">© 2026 Setbox Serviços Digitais</p>
-      <p class="text-[12px] text-[#BBBBBB]">Av. Carneiro Leão, 563 - Zona 01<br>Maringá / PR - 87014-010</p>
-        <p class="text-[12px] text-[#BBBBBB]">CNPJ 08.889.601/0001-09</p>
+    <div class="max-w-5xl mx-auto px-4 md:px-8 py-10 md:py-14 flex flex-col md:flex-row gap-10 md:gap-16">
+      <div class="flex-shrink-0 md:min-w-[220px]">
+        <img src="assets/urbanview.png" alt="UrbanView" class="h-6 w-auto mb-5" width="1305" height="160">
+        <p class="text-[12px] text-[#6E6E6E] mb-1">© 2026 Setbox Serviços Digitais</p>
+        <p class="text-[12px] text-[#6E6E6E]">Av. Carneiro Leão, 563 - Zona 01<br>Maringá / PR - 87014-010</p>
+        <p class="text-[12px] text-[#6E6E6E]">CNPJ 08.889.601/0001-09</p>
+      </div>
+      <div class="flex-1">
+        <p class="text-[12px] font-semibold text-[#111111] mb-4">UrbanView</p>
+        <ul class="space-y-2.5">
+          <li><a href="produto.html" class="link-footer">Produto</a></li>
+          <li><a href="mercado.html" class="link-footer">Mercado</a></li>
+          <li><a href="blog/" class="link-footer">Blog</a></li>
+          <li><a href="sobre.html" class="link-footer">Sobre</a></li>
+        </ul>
+      </div>
+      <div class="flex-1">
+        <p class="text-[12px] font-semibold text-[#111111] mb-4">Contato</p>
+        <ul class="space-y-2.5">
+          <li><a href="mailto:contato@urbanview.media" class="link-footer">contato@urbanview.media</a></li>
+          <li><a href="tel:+5541999073688" class="link-footer">(41) 99907-3688</a></li>
+        </ul>
+      </div>
+      <div class="flex-1">
+        <p class="text-[12px] font-semibold text-[#111111] mb-4">Institucional</p>
+        <ul class="space-y-2.5">
+          <li><a href="faq.html" class="link-footer">Perguntas frequentes</a></li>
+          <li><a href="termos-de-uso.html" class="link-footer">Termos de Uso</a></li>
+          <li><a href="politica-de-privacidade.html" class="link-footer">Política de Privacidade</a></li>
+        </ul>
+      </div>
     </div>
   </footer>
 
   <script>
-    document.getElementById('nav-toggle').addEventListener('click', function() {
+    (function () {
+      var toggle = document.getElementById('nav-toggle');
       var menu = document.getElementById('nav-menu');
-      menu.classList.toggle('hidden');
-      this.setAttribute('aria-expanded', String(!menu.classList.contains('hidden')));
-    });
+      if (!toggle || !menu) return;
+      function close(returnFocus) {
+        menu.classList.add('hidden');
+        toggle.setAttribute('aria-expanded', 'false');
+        if (returnFocus) toggle.focus();
+      }
+      toggle.addEventListener('click', function () {
+        var open = menu.classList.toggle('hidden') === false;
+        toggle.setAttribute('aria-expanded', String(open));
+        if (open) {
+          var first = menu.querySelector('a');
+          if (first) first.focus();
+        }
+      });
+      menu.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') close(true);
+      });
+      toggle.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') close(true);
+      });
+      document.addEventListener('click', function (e) {
+        if (menu.classList.contains('hidden')) return;
+        if (!menu.contains(e.target) && !toggle.contains(e.target)) close(false);
+      });
+    })();
   </script>
 </body>
 </html>

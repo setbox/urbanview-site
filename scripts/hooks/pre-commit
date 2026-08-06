@@ -1,0 +1,71 @@
+#!/usr/bin/env bash
+#
+# Roda antes de cada commit. Só faz alguma coisa quando há post do blog no stage.
+#
+# 1. Gera a imagem social que estiver faltando e a acrescenta ao commit
+# 2. Avisa sobre os passos da publicação que ninguém consegue automatizar
+#
+# Para pular: git commit --no-verify
+
+set -uo pipefail
+
+cd "$(git rev-parse --show-toplevel)"
+
+posts=$(git diff --cached --name-only --diff-filter=ACM | grep '^blog/.*\.html$' | grep -v '^blog/index\.html$' || true)
+[ -z "$posts" ] && exit 0
+
+echo "pre-commit: post do blog no commit, conferindo a publicação"
+
+# --- 1. imagem social ---------------------------------------------------------
+
+if [ ! -x scripts/og.sh ]; then
+  echo "  aviso: scripts/og.sh não encontrado ou sem permissão de execução"
+else
+  saida=$(./scripts/og.sh 2>&1)
+  status=$?
+  if [ $status -ne 0 ]; then
+    echo "$saida" | sed 's/^/  /'
+    echo
+    echo "  A geração da imagem social falhou. Resolva, ou use --no-verify se for proposital."
+    exit 1
+  fi
+  novas=$(echo "$saida" | grep '^gerado ' | awk '{print $2}' || true)
+  if [ -n "$novas" ]; then
+    echo "$novas" | while read -r img; do
+      git add "$img"
+      echo "  imagem gerada e adicionada ao commit: $img"
+    done
+  fi
+fi
+
+# --- 2. o que o script não resolve sozinho ------------------------------------
+
+avisos=0
+for post in $posts; do
+  slug=$(basename "$post" .html)
+
+  grep -q "href=\"$slug.html\"" blog/index.html \
+    || { echo "  falta o card de $slug em blog/index.html"; avisos=$((avisos+1)); }
+
+  grep -q "blog/$slug.html" sitemap.xml \
+    || { echo "  falta a URL de $slug em sitemap.xml"; avisos=$((avisos+1)); }
+
+  grep -q "blog/$slug.html" feed.xml \
+    || { echo "  falta o item de $slug em feed.xml"; avisos=$((avisos+1)); }
+
+  grep -q "assets/og/$slug.png" "$post" \
+    || { echo "  $post ainda aponta para a OG genérica"; avisos=$((avisos+1)); }
+
+  relacionados=$(grep -c 'class="post-card"' "$post" || true)
+  [ "$relacionados" -eq 2 ] \
+    || { echo "  $post tem $relacionados posts em \"Continue lendo\", o padrão é 2"; avisos=$((avisos+1)); }
+done
+
+if [ "$avisos" -gt 0 ]; then
+  echo
+  echo "  $avisos pendência(s) acima. O commit segue, mas veja o checklist de publicação no CLAUDE.md."
+else
+  echo "  publicação completa"
+fi
+
+exit 0

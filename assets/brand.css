@@ -33,6 +33,7 @@
 
 :root {
   --uv-laranja: #FF7902;
+  --uv-laranja-texto: #B35300;
   --uv-laranja-hover: #D96500;
   --uv-laranja-lt: #FFF3E8;
   --uv-laranja-soft: #FFE6CE;
@@ -44,6 +45,28 @@
   --uv-text: #111111;
   --uv-muted: #555555;
   --uv-border: #E5E5E5;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  background: var(--uv-preto);
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 0 0 6px 0;
+}
+.skip-link:focus {
+  left: 0;
+}
+
+:focus-visible {
+  outline: 3px solid var(--uv-laranja);
+  outline-offset: 2px;
+  border-radius: 2px;
 }
 
 body {
@@ -66,7 +89,7 @@ html { scroll-behavior: smooth; }
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--uv-laranja);
+  color: var(--uv-laranja-texto);
 }
 .label-roxo {
   font-size: 11px;
@@ -81,7 +104,7 @@ html { scroll-behavior: smooth; }
   display: inline-block;
   font-size: 14px;
   font-weight: 600;
-  color: #FFFFFF;
+  color: #000000;
   background: var(--uv-laranja);
   padding: 12px 24px;
   border-radius: 6px;
@@ -118,7 +141,7 @@ html { scroll-behavior: smooth; }
   display: inline-block;
   font-size: 14px;
   font-weight: 600;
-  color: #FFFFFF;
+  color: #000000;
   background: var(--uv-laranja);
   padding: 12px 24px;
   border-radius: 6px;
@@ -154,7 +177,7 @@ html { scroll-behavior: smooth; }
 .bullet-mark {
   font-weight: 700;
   flex-shrink: 0;
-  color: var(--uv-laranja);
+  color: var(--uv-laranja-texto);
 }
 
 /* Badges de estado */
@@ -169,7 +192,7 @@ html { scroll-behavior: smooth; }
 }
 .badge-red { background: #FEF2F2; border: 1px solid #FECACA; color: #991B1B; }
 .badge-yellow { background: #FEF9C3; border: 1px solid #FDE047; color: #713F12; }
-.badge-gray { background: #F7F7F7; border: 1px solid #E5E5E5; color: #888888; }
+.badge-gray { background: #F7F7F7; border: 1px solid #E5E5E5; color: #6B6B6B; }
 .badge-orange { background: var(--uv-laranja-lt); border: 1px solid #FFD2A8; color: #A34E00; }
 .badge-roxo { background: var(--uv-roxo-lt); border: 1px solid #D9C6F7; color: var(--uv-roxo-dark); }
 
@@ -180,21 +203,21 @@ html { scroll-behavior: smooth; }
   letter-spacing: -0.02em;
   line-height: 1;
   margin-bottom: 8px;
-  color: var(--uv-laranja);
+  color: var(--uv-laranja-texto);
 }
 .stat-cap {
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #8A6A50;
+  color: #6B4A30;
 }
 
 /* Grade bi-semanal do hero */
 .grid-head {
   font-size: 10px;
   font-weight: 600;
-  color: #AAAAAA;
+  color: #6E6E6E;
   text-align: center;
   letter-spacing: 0.04em;
 }
@@ -218,7 +241,7 @@ html { scroll-behavior: smooth; }
   align-items: center;
   gap: 6px;
   font-size: 11px;
-  color: #888888;
+  color: #6B6B6B;
 }
 .legend i {
   width: 14px;
@@ -288,7 +311,7 @@ html { scroll-behavior: smooth; }
 .mod-n {
   font-size: 12px;
   font-weight: 700;
-  color: var(--uv-laranja);
+  color: var(--uv-laranja-texto);
   flex-shrink: 0;
   width: 22px;
   padding-top: 2px;
@@ -308,7 +331,7 @@ html { scroll-behavior: smooth; }
   height: 26px;
   border-radius: 9999px;
   background: var(--uv-laranja);
-  color: #FFFFFF;
+  color: #000000;
   font-size: 12px;
   font-weight: 700;
   display: flex;
@@ -375,7 +398,7 @@ html { scroll-behavior: smooth; }
 .post-card span {
   font-size: 13px;
   font-weight: 500;
-  color: var(--uv-laranja);
+  color: var(--uv-laranja-texto);
 }
 
 /* Blog: corpo do post */
@@ -418,7 +441,7 @@ html { scroll-behavior: smooth; }
   content: "→";
   position: absolute;
   left: 0;
-  color: var(--uv-laranja);
+  color: var(--uv-laranja-texto);
   font-weight: 700;
 }
 .post strong { font-weight: 600; color: var(--uv-text); }
@@ -426,7 +449,7 @@ html { scroll-behavior: smooth; }
 /* Links de rodapé */
 .link-footer {
   font-size: 12px;
-  color: #888888;
+  color: #6B6B6B;
   transition: color 0.2s;
 }
 .link-footer:hover { color: var(--uv-text); }

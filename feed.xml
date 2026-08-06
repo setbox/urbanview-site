@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog UrbanView</title>
+    <link>https://urbanview.media/blog/</link>
+    <atom:link href="https://urbanview.media/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Mídia exterior explicada: bi-semana, inventário, comprovação de veiculação e o mercado de OOH no Brasil.</description>
+    <language>pt-BR</language>
+    <item>
+      <title>O que é bi-semana e por que o outdoor se vende de 14 em 14 dias</title>
+      <link>https://urbanview.media/blog/o-que-e-bi-semana.html</link>
+      <guid isPermaLink="true">https://urbanview.media/blog/o-que-e-bi-semana.html</guid>
+      <description>O calendário comercial da mídia exterior não usa mês. Usa bi-semana: 26 períodos de 14 dias, numerados com números pares. Entenda a numeração, o prazo de autorização e por que o período não vendido evapora.</description>
+    </item>
+    <item>
+      <title>Local, estrutura e face: os três níveis do inventário</title>
+      <link>https://urbanview.media/blog/local-estrutura-face.html</link>
+      <guid isPermaLink="true">https://urbanview.media/blog/local-estrutura-face.html</guid>
+      <description>Não se vende &quot;um outdoor&quot;. O inventário tem três níveis, e confundir os três é o erro de cadastro mais caro do setor: impede representar triedro, trocar a estrutura mantendo o ponto e vender cada face separadamente.</description>
+    </item>
+    <item>
+      <title>Overbooking: como duas vendas caem na mesma face</title>
+      <link>https://urbanview.media/blog/overbooking-em-midia-exterior.html</link>
+      <guid isPermaLink="true">https://urbanview.media/blog/overbooking-em-midia-exterior.html</guid>
+      <description>Duas campanhas vendidas para a mesma face na mesma bi-semana. O erro só aparece no dia da instalação, e alguém vai ficar sem o ponto. Como ele acontece e por que aviso de tela não resolve.</description>
+    </item>
+    <item>
+      <title>Checking fotográfico: como comprovar veiculação de verdade</title>
+      <link>https://urbanview.media/blog/checking-fotografico.html</link>
+      <guid isPermaLink="true">https://urbanview.media/blog/checking-fotografico.html</guid>
+      <description>A foto do anúncio instalado é o que fecha o ciclo e libera o faturamento. Como produzir checking em escala, o que precisa estar em cada imagem e por que grupo de WhatsApp não é arquivo de comprovação.</description>
+    </item>
+    <item>
+      <title>Quanto custa manter um ponto de mídia exterior</title>
+      <link>https://urbanview.media/blog/quanto-custa-manter-um-ponto.html</link>
+      <guid isPermaLink="true">https://urbanview.media/blog/quanto-custa-manter-um-ponto.html</guid>
+      <description>Aluguel do espaço, energia, alvará, manutenção, poda e produção. Some tudo por face e a pergunta central do negócio ganha resposta: este ponto dá lucro ou está financiado pelos outros?</description>
+    </item>
+    <item>
+      <title>Documentos do ponto: alvará, contrato e o risco de perder a face</title>
+      <link>https://urbanview.media/blog/documentos-do-ponto.html</link>
+      <guid isPermaLink="true">https://urbanview.media/blog/documentos-do-ponto.html</guid>
+      <description>Todo ponto carrega uma pasta: contrato de locação, alvará, licença, ART, apólice. Cada um com validade própria. O que vence quando, e por que documento vencido custa mais caro que face ociosa.</description>
+    </item>
+    <item>
+      <title>Calhau: o que fazer com a face que não vendeu</title>
+      <link>https://urbanview.media/blog/calhau-face-sem-anunciante.html</link>
+      <guid isPermaLink="true">https://urbanview.media/blog/calhau-face-sem-anunciante.html</guid>
+      <description>A bi-semana que passou sem anunciante não volta. Como tratar ociosidade: o calhau, o desconto de fechamento, o ponto fixo e o momento em que baixar preço custa mais caro do que deixar a face vazia.</description>
+    </item>
+    <item>
+      <title>Comissão de agência e BV: por que não são a mesma coisa</title>
+      <link>https://urbanview.media/blog/comissao-de-agencia-e-bv.html</link>
+      <guid isPermaLink="true">https://urbanview.media/blog/comissao-de-agencia-e-bv.html</guid>
+      <description>Uma sai do valor pago pelo cliente, o outro sai do bolso da exibidora. Tratar comissão e bônus de volume como a mesma coisa é o jeito mais rápido de fechar um PI achando que teve margem.</description>
+    </item>
+    <item>
+      <title>Permuta é negociação, não desconto</title>
+      <link>https://urbanview.media/blog/permuta-em-midia-exterior.html</link>
+      <guid isPermaLink="true">https://urbanview.media/blog/permuta-em-midia-exterior.html</guid>
+      <description>Trocar veiculação por produto ou serviço é prática corrente do setor. O que quase ninguém registra direito é que permuta não é desconto nem isenção: há prestação de serviço dos dois lados, e nota a emitir.</description>
+    </item>
+    <item>
+      <title>GRP, CPM e impactos: como se mede audiência em OOH</title>
+      <link>https://urbanview.media/blog/grp-cpm-e-impactos.html</link>
+      <guid isPermaLink="true">https://urbanview.media/blog/grp-cpm-e-impactos.html</guid>
+      <description>Como a mídia exterior entra no mesmo plano que TV e digital: a cadeia OTS, PTS e GRP definida pela ABA. E quais campos do cadastro do ponto precisam existir para que essa conta seja possível.</description>
+    </item>
+    <item>
+      <title>O fim do checking? O que a auditoria de inventário muda</title>
+      <link>https://urbanview.media/blog/auditoria-de-inventario-ivc.html</link>
+      <guid isPermaLink="true">https://urbanview.media/blog/auditoria-de-inventario-ivc.html</guid>
+      <description>O mercado caminha para substituir a foto por apuração documental: cadastro padronizado, rastro contábil por ponto e ordem de serviço com despesa comprovada. O que isso exige de quem opera hoje em planilha.</description>
+    </item>
+    <item>
+      <title>Da planilha ao sistema: migrar o inventário sem parar de vender</title>
+      <link>https://urbanview.media/blog/migrar-inventario-da-planilha.html</link>
+      <guid isPermaLink="true">https://urbanview.media/blog/migrar-inventario-da-planilha.html</guid>
+      <description>O medo é sempre o mesmo: parar de vender durante a troca. Como preparar a planilha, em que ordem ativar os módulos e por que a carga do inventário é sempre a primeira etapa, nunca a última.</description>
+    </item>
+    <item>
+      <title>O que significa OOH?</title>
+      <link>https://urbanview.media/blog/o-que-significa-ooh.html</link>
+      <guid isPermaLink="true">https://urbanview.media/blog/o-que-significa-ooh.html</guid>
+      <description>OOH é a sigla para Out of Home, ou Fora de Casa. É toda publicidade exibida fora do ambiente doméstico, do outdoor na avenida ao painel na estação de metrô. Entenda os formatos, quem é quem na cadeia e por que o que se vende é a face.</description>
+    </item>
+    <item>
+      <title>Ainda vale a pena anunciar em outdoor?</title>
+      <link>https://urbanview.media/blog/ainda-vale-a-pena-anunciar-em-outdoor.html</link>
+      <guid isPermaLink="true">https://urbanview.media/blog/ainda-vale-a-pena-anunciar-em-outdoor.html</guid>
+      <description>Com a internet e as redes sociais consumindo a maior parte da verba, muita empresa passou a questionar o outdoor. Os números do mercado dizem outra coisa, e o que mudou não foi a eficácia da mídia, foi a exigência de comprovação.</description>
+    </item>
+    <item>
+      <title>Como planejar uma campanha em mídia OOH</title>
+      <link>https://urbanview.media/blog/anunciar-em-midia-ooh-de-asas-a-sua-marca.html</link>
+      <guid isPermaLink="true">https://urbanview.media/blog/anunciar-em-midia-ooh-de-asas-a-sua-marca.html</guid>
+      <description>Mídia exterior premia planejamento. Antes de escolher o ponto, defina objetivo, público e praça, entenda a bi-semana e combine como a entrega será comprovada. O passo a passo de uma campanha OOH bem montada.</description>
+    </item>
+  </channel>
+</rss>

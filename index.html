@@ -27,12 +27,64 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preload" href="assets/fonts/wotfard-regular.woff" as="font" type="font/woff" crossorigin>
   <link rel="preload" href="assets/fonts/wotfard-bold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="alternate" type="application/rss+xml" title="Blog UrbanView" href="feed.xml">
   <link rel="stylesheet" href="assets/brand.css">
   <script>
     tailwind.config = { theme: { extend: { fontFamily: { sans: ['Wotfard','Inter','system-ui','-apple-system','sans-serif'] } } } }
   </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://urbanview.media/#organizacao",
+      "name": "UrbanView",
+      "legalName": "SETBOX INFORMATICA LTDA",
+      "taxID": "08.889.601/0001-09",
+      "url": "https://urbanview.media/",
+      "logo": "https://urbanview.media/assets/urbanview.png",
+      "email": "contato@urbanview.media",
+      "telephone": "+55-41-99907-3688",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Carneiro Leão, 563 - Zona 01",
+        "addressLocality": "Maringá",
+        "addressRegion": "PR",
+        "postalCode": "87014-010",
+        "addressCountry": "BR"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://urbanview.media/#site",
+      "url": "https://urbanview.media/",
+      "name": "UrbanView",
+      "inLanguage": "pt-BR",
+      "publisher": {
+        "@id": "https://urbanview.media/#organizacao"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "UrbanView",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "ERP para mídia exterior (OOH)",
+      "operatingSystem": "Web, iOS, Android",
+      "inLanguage": "pt-BR",
+      "url": "https://urbanview.media/produto.html",
+      "publisher": {
+        "@id": "https://urbanview.media/#organizacao"
+      },
+      "description": "ERP para exibidoras de mídia exterior: grade bi-semanal com trava de overbooking, proposta, pedido de inserção, checking fotográfico e rentabilidade por ponto."
+    }
+  ]
+}
+  </script>
 </head>
 <body class="font-sans antialiased">
+
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
   <!-- Nav -->
   <nav class="sticky top-0 z-50 bg-[#FAFAFA] border-b border-[#E5E5E5]">
@@ -50,7 +102,7 @@
             <rect y="15" width="20" height="2" rx="1" fill="#111111"/>
           </svg>
         </button>
-        <a href="mailto:contato@urbanview.media?subject=UrbanView - Solicitar demonstração" class="text-sm bg-[#FF7902] text-white px-4 py-1.5 rounded-[6px] hover:bg-[#D96500] transition-colors font-medium whitespace-nowrap">Solicitar demonstração</a>
+        <a href="mailto:contato@urbanview.media?subject=UrbanView - Solicitar demonstração" class="text-sm bg-[#FF7902] text-[#000000] px-4 py-1.5 rounded-[6px] hover:bg-[#D96500] transition-colors font-medium whitespace-nowrap">Solicitar demonstração</a>
       </div>
     </div>
     <div id="nav-menu" class="hidden md:hidden border-t border-[#E5E5E5]">
@@ -63,7 +115,7 @@
     </div>
   </nav>
 
-  <main>
+  <main id="conteudo" tabindex="-1">
 
     <!-- HERO -->
     <section class="border-b border-[#E5E5E5]" style="padding-top:96px;padding-bottom:96px;">
@@ -83,7 +135,7 @@
             </div>
           </div>
           <div class="border border-[#E5E5E5] rounded-xl bg-white p-6">
-            <p class="text-[11px] font-semibold tracking-wide uppercase text-[#888888] mb-4">Grade de ocupação · bi-semanas</p>
+            <p class="text-[11px] font-semibold tracking-wide uppercase text-[#6B6B6B] mb-4">Grade de ocupação · bi-semanas</p>
             <div style="display:grid;grid-template-columns:auto repeat(6,1fr);gap:4px;align-items:center;">
               <span class="grid-head"></span>
               <span class="grid-head">02</span>
@@ -192,7 +244,7 @@
               <span style="font-size:18px;flex-shrink:0;">📊</span>
               <div style="min-width:0;">
                 <div class="file-card-name text-[13px] font-medium text-[#111111]" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">disponibilidade-bi-08-v7-FINAL.xlsx</div>
-                <div class="text-[12px] text-[#888888] mt-0.5">Três cópias em circulação por e-mail</div>
+                <div class="text-[12px] text-[#6B6B6B] mt-0.5">Três cópias em circulação por e-mail</div>
               </div>
               <span class="badge badge-red">CONFLITO</span>
             </div>
@@ -200,7 +252,7 @@
               <span style="font-size:18px;flex-shrink:0;">📎</span>
               <div style="min-width:0;">
                 <div class="file-card-name text-[13px] font-medium text-[#111111]" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">proposta-campanha-48MB.pptx</div>
-                <div class="text-[12px] text-[#888888] mt-0.5">Montada à mão, sem preço nem validade</div>
+                <div class="text-[12px] text-[#6B6B6B] mt-0.5">Montada à mão, sem preço nem validade</div>
               </div>
               <span class="badge badge-yellow">LENTO</span>
             </div>
@@ -208,7 +260,7 @@
               <span style="font-size:18px;flex-shrink:0;">📷</span>
               <div style="min-width:0;">
                 <div class="text-[13px] font-medium text-[#111111]">Checking no grupo do WhatsApp</div>
-                <div class="text-[12px] text-[#888888] mt-0.5">Sem data, sem geolocalização, sem campanha</div>
+                <div class="text-[12px] text-[#6B6B6B] mt-0.5">Sem data, sem geolocalização, sem campanha</div>
               </div>
               <span class="badge badge-gray">SEM PROVA</span>
             </div>
@@ -216,7 +268,7 @@
               <span style="font-size:18px;flex-shrink:0;">🧾</span>
               <div style="min-width:0;">
                 <div class="text-[13px] font-medium text-[#111111]">Aluguel, energia e alvará por ponto</div>
-                <div class="text-[12px] text-[#888888] mt-0.5">Fora do sistema, então ninguém sabe o lucro da face</div>
+                <div class="text-[12px] text-[#6B6B6B] mt-0.5">Fora do sistema, então ninguém sabe o lucro da face</div>
               </div>
               <span class="badge badge-gray">INVISÍVEL</span>
             </div>
@@ -400,15 +452,15 @@
     <!-- CTA -->
     <section style="padding-top:96px;padding-bottom:96px;background:#FF7902;">
       <div class="container-inner" style="text-align:center;">
-        <h2 class="text-[26px] md:text-[38px] font-bold leading-[1.15] tracking-tight text-white mb-5">
+        <h2 class="text-[26px] md:text-[38px] font-bold leading-[1.15] tracking-tight text-[#000000] mb-5">
           Veja a sua grade dentro do sistema
         </h2>
-        <p class="text-[15px] md:text-[17px] leading-[1.7] mb-8" style="color:#FFE6CE;max-width:460px;margin-left:auto;margin-right:auto;">
+        <p class="text-[15px] md:text-[17px] leading-[1.7] mb-8" style="color:#4A2400;max-width:460px;margin-left:auto;margin-right:auto;">
           Agende uma demonstração com a equipe UrbanView. Levamos o seu inventário para dentro do produto e mostramos o ciclo rodando.
         </p>
         <a href="mailto:contato@urbanview.media?subject=UrbanView - Solicitar demonstração" class="btn-on-orange">Solicitar demonstração</a>
         <div class="mt-4">
-          <a href="mailto:contato@urbanview.media" class="inline-flex items-center gap-2 text-[14px] font-medium hover:opacity-70 transition-opacity" style="color:#FFE6CE;">contato@urbanview.media →</a>
+          <a href="mailto:contato@urbanview.media" class="inline-flex items-center gap-2 text-[14px] font-medium hover:opacity-70 transition-opacity" style="color:#4A2400;">contato@urbanview.media →</a>
         </div>
       </div>
     </section>
@@ -419,9 +471,9 @@
     <div class="max-w-5xl mx-auto px-4 md:px-8 py-10 md:py-14 flex flex-col md:flex-row gap-10 md:gap-16">
       <div class="flex-shrink-0 md:min-w-[220px]">
         <img src="assets/urbanview.png" alt="UrbanView" class="h-6 w-auto mb-5" width="1305" height="160">
-        <p class="text-[12px] text-[#BBBBBB] mb-1">© 2026 Setbox Serviços Digitais</p>
-        <p class="text-[12px] text-[#BBBBBB]">Av. Carneiro Leão, 563 - Zona 01<br>Maringá / PR - 87014-010</p>
-        <p class="text-[12px] text-[#BBBBBB]">CNPJ 08.889.601/0001-09</p>
+        <p class="text-[12px] text-[#6E6E6E] mb-1">© 2026 Setbox Serviços Digitais</p>
+        <p class="text-[12px] text-[#6E6E6E]">Av. Carneiro Leão, 563 - Zona 01<br>Maringá / PR - 87014-010</p>
+        <p class="text-[12px] text-[#6E6E6E]">CNPJ 08.889.601/0001-09</p>
       </div>
       <div class="flex-1">
         <p class="text-[12px] font-semibold text-[#111111] mb-4">UrbanView</p>
@@ -451,11 +503,34 @@
   </footer>
 
   <script>
-    document.getElementById('nav-toggle').addEventListener('click', function() {
+    (function () {
+      var toggle = document.getElementById('nav-toggle');
       var menu = document.getElementById('nav-menu');
-      menu.classList.toggle('hidden');
-      this.setAttribute('aria-expanded', String(!menu.classList.contains('hidden')));
-    });
+      if (!toggle || !menu) return;
+      function close(returnFocus) {
+        menu.classList.add('hidden');
+        toggle.setAttribute('aria-expanded', 'false');
+        if (returnFocus) toggle.focus();
+      }
+      toggle.addEventListener('click', function () {
+        var open = menu.classList.toggle('hidden') === false;
+        toggle.setAttribute('aria-expanded', String(open));
+        if (open) {
+          var first = menu.querySelector('a');
+          if (first) first.focus();
+        }
+      });
+      menu.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') close(true);
+      });
+      toggle.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') close(true);
+      });
+      document.addEventListener('click', function (e) {
+        if (menu.classList.contains('hidden')) return;
+        if (!menu.contains(e.target) && !toggle.contains(e.target)) close(false);
+      });
+    })();
   </script>
 </body>
 </html>

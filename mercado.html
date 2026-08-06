@@ -27,12 +27,47 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preload" href="assets/fonts/wotfard-regular.woff" as="font" type="font/woff" crossorigin>
   <link rel="preload" href="assets/fonts/wotfard-bold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="alternate" type="application/rss+xml" title="Blog UrbanView" href="feed.xml">
   <link rel="stylesheet" href="assets/brand.css">
   <script>
     tailwind.config = { theme: { extend: { fontFamily: { sans: ['Wotfard','Inter','system-ui','-apple-system','sans-serif'] } } } }
   </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Mercado - UrbanView",
+  "description": "Como funciona o mercado de mídia exterior no Brasil: inventário em três níveis, calendário de bi-semanas, cadeia comercial, normas da Central de Outdoor e métricas de audiência OOH.",
+  "url": "https://urbanview.media/mercado.html",
+  "inLanguage": "pt-BR",
+  "isPartOf": {
+    "@id": "https://urbanview.media/#site"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://urbanview.media/#organizacao",
+    "name": "UrbanView",
+    "legalName": "SETBOX INFORMATICA LTDA",
+    "taxID": "08.889.601/0001-09",
+    "url": "https://urbanview.media/",
+    "logo": "https://urbanview.media/assets/urbanview.png",
+    "email": "contato@urbanview.media",
+    "telephone": "+55-41-99907-3688",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Carneiro Leão, 563 - Zona 01",
+      "addressLocality": "Maringá",
+      "addressRegion": "PR",
+      "postalCode": "87014-010",
+      "addressCountry": "BR"
+    }
+  }
+}
+  </script>
 </head>
 <body class="font-sans antialiased">
+
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
   <!-- Nav -->
   <nav class="sticky top-0 z-50 bg-[#FAFAFA] border-b border-[#E5E5E5]">
@@ -40,7 +75,7 @@
       <a href="index.html"><img src="assets/urbanview.png" alt="UrbanView" class="h-6 w-auto" width="1305" height="160"></a>
       <div class="flex items-center gap-4 md:gap-7">
         <a href="produto.html" class="hidden md:block text-sm text-[#111111] hover:opacity-50 transition-opacity">Produto</a>
-        <a href="mercado.html" class="hidden md:block text-sm font-medium" style="color:#FF7902;">Mercado</a>
+        <a href="mercado.html" class="hidden md:block text-sm font-medium" style="color:#B35300;">Mercado</a>
         <a href="blog/" class="hidden md:block text-sm text-[#111111] hover:opacity-50 transition-opacity">Blog</a>
         <a href="sobre.html" class="hidden md:block text-sm text-[#111111] hover:opacity-50 transition-opacity">Sobre</a>
         <button id="nav-toggle" class="md:hidden p-1" aria-label="Abrir menu" aria-expanded="false">
@@ -50,20 +85,20 @@
             <rect y="15" width="20" height="2" rx="1" fill="#111111"/>
           </svg>
         </button>
-        <a href="mailto:contato@urbanview.media?subject=UrbanView - Solicitar demonstração" class="text-sm bg-[#FF7902] text-white px-4 py-1.5 rounded-[6px] hover:bg-[#D96500] transition-colors font-medium whitespace-nowrap">Solicitar demonstração</a>
+        <a href="mailto:contato@urbanview.media?subject=UrbanView - Solicitar demonstração" class="text-sm bg-[#FF7902] text-[#000000] px-4 py-1.5 rounded-[6px] hover:bg-[#D96500] transition-colors font-medium whitespace-nowrap">Solicitar demonstração</a>
       </div>
     </div>
     <div id="nav-menu" class="hidden md:hidden border-t border-[#E5E5E5]">
       <div class="max-w-5xl mx-auto px-4 py-3 flex flex-col">
         <a href="produto.html" class="text-sm text-[#111111] py-2.5 border-b border-[#F0F0F0] hover:opacity-50 transition-opacity">Produto</a>
-        <a href="mercado.html" class="text-sm py-2.5 border-b border-[#F0F0F0] font-medium" style="color:#FF7902;">Mercado</a>
+        <a href="mercado.html" class="text-sm py-2.5 border-b border-[#F0F0F0] font-medium" style="color:#B35300;">Mercado</a>
         <a href="blog/" class="text-sm text-[#111111] py-2.5 border-b border-[#F0F0F0] hover:opacity-50 transition-opacity">Blog</a>
         <a href="sobre.html" class="text-sm text-[#111111] py-2.5 hover:opacity-50 transition-opacity">Sobre</a>
       </div>
     </div>
   </nav>
 
-  <main>
+  <main id="conteudo" tabindex="-1">
 
     <!-- HERO -->
     <section class="border-b border-[#E5E5E5]" style="padding-top:80px;padding-bottom:64px;">
@@ -245,17 +280,17 @@
         </div>
         <div class="three-col" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
           <div class="border border-[#E5E5E5] rounded-xl bg-white p-6">
-            <div class="text-[11px] font-semibold uppercase tracking-wide mb-2" style="color:#FF7902;">Etapa 1</div>
+            <div class="text-[11px] font-semibold uppercase tracking-wide mb-2" style="color:#B35300;">Etapa 1</div>
             <h3 class="text-[16px] font-semibold text-[#111111] mb-2">OTS</h3>
             <p class="text-[13px] leading-[1.7] text-[#555555]">Oportunidade de ver: quanta gente passa pelo ponto no período.</p>
           </div>
           <div class="border border-[#E5E5E5] rounded-xl bg-white p-6">
-            <div class="text-[11px] font-semibold uppercase tracking-wide mb-2" style="color:#FF7902;">Etapa 2</div>
+            <div class="text-[11px] font-semibold uppercase tracking-wide mb-2" style="color:#B35300;">Etapa 2</div>
             <h3 class="text-[16px] font-semibold text-[#111111] mb-2">PTS</h3>
             <p class="text-[13px] leading-[1.7] text-[#555555]">Probabilidade de ver, ajustada por tamanho, altura, inclinação, iluminação, tipo e ambiente.</p>
           </div>
           <div class="border border-[#E5E5E5] rounded-xl bg-white p-6">
-            <div class="text-[11px] font-semibold uppercase tracking-wide mb-2" style="color:#FF7902;">Etapa 3</div>
+            <div class="text-[11px] font-semibold uppercase tracking-wide mb-2" style="color:#B35300;">Etapa 3</div>
             <h3 class="text-[16px] font-semibold text-[#111111] mb-2">GRP</h3>
             <p class="text-[13px] leading-[1.7] text-[#555555]">Audiência bruta sobre o universo da praça, com alcance e frequência derivados.</p>
           </div>
@@ -321,15 +356,15 @@
     <!-- CTA -->
     <section style="padding-top:96px;padding-bottom:96px;background:#FF7902;">
       <div class="container-inner" style="text-align:center;">
-        <h2 class="text-[26px] md:text-[38px] font-bold leading-[1.15] tracking-tight text-white mb-5">
+        <h2 class="text-[26px] md:text-[38px] font-bold leading-[1.15] tracking-tight text-[#000000] mb-5">
           Um sistema que já fala essa língua
         </h2>
-        <p class="text-[15px] md:text-[17px] leading-[1.7] mb-8" style="color:#FFE6CE;max-width:480px;margin-left:auto;margin-right:auto;">
+        <p class="text-[15px] md:text-[17px] leading-[1.7] mb-8" style="color:#4A2400;max-width:480px;margin-left:auto;margin-right:auto;">
           Bi-semana, face, PI, checking e calhau não são customização no UrbanView. São o modelo de dados.
         </p>
         <a href="mailto:contato@urbanview.media?subject=UrbanView - Solicitar demonstração" class="btn-on-orange">Solicitar demonstração</a>
         <div class="mt-4">
-          <a href="produto.html" class="inline-flex items-center gap-2 text-[14px] font-medium hover:opacity-70 transition-opacity" style="color:#FFE6CE;">Ver o produto →</a>
+          <a href="produto.html" class="inline-flex items-center gap-2 text-[14px] font-medium hover:opacity-70 transition-opacity" style="color:#4A2400;">Ver o produto →</a>
         </div>
       </div>
     </section>
@@ -340,9 +375,9 @@
     <div class="max-w-5xl mx-auto px-4 md:px-8 py-10 md:py-14 flex flex-col md:flex-row gap-10 md:gap-16">
       <div class="flex-shrink-0 md:min-w-[220px]">
         <img src="assets/urbanview.png" alt="UrbanView" class="h-6 w-auto mb-5" width="1305" height="160">
-        <p class="text-[12px] text-[#BBBBBB] mb-1">© 2026 Setbox Serviços Digitais</p>
-        <p class="text-[12px] text-[#BBBBBB]">Av. Carneiro Leão, 563 - Zona 01<br>Maringá / PR - 87014-010</p>
-        <p class="text-[12px] text-[#BBBBBB]">CNPJ 08.889.601/0001-09</p>
+        <p class="text-[12px] text-[#6E6E6E] mb-1">© 2026 Setbox Serviços Digitais</p>
+        <p class="text-[12px] text-[#6E6E6E]">Av. Carneiro Leão, 563 - Zona 01<br>Maringá / PR - 87014-010</p>
+        <p class="text-[12px] text-[#6E6E6E]">CNPJ 08.889.601/0001-09</p>
       </div>
       <div class="flex-1">
         <p class="text-[12px] font-semibold text-[#111111] mb-4">UrbanView</p>
@@ -372,11 +407,34 @@
   </footer>
 
   <script>
-    document.getElementById('nav-toggle').addEventListener('click', function() {
+    (function () {
+      var toggle = document.getElementById('nav-toggle');
       var menu = document.getElementById('nav-menu');
-      menu.classList.toggle('hidden');
-      this.setAttribute('aria-expanded', String(!menu.classList.contains('hidden')));
-    });
+      if (!toggle || !menu) return;
+      function close(returnFocus) {
+        menu.classList.add('hidden');
+        toggle.setAttribute('aria-expanded', 'false');
+        if (returnFocus) toggle.focus();
+      }
+      toggle.addEventListener('click', function () {
+        var open = menu.classList.toggle('hidden') === false;
+        toggle.setAttribute('aria-expanded', String(open));
+        if (open) {
+          var first = menu.querySelector('a');
+          if (first) first.focus();
+        }
+      });
+      menu.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') close(true);
+      });
+      toggle.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') close(true);
+      });
+      document.addEventListener('click', function (e) {
+        if (menu.classList.contains('hidden')) return;
+        if (!menu.contains(e.target) && !toggle.contains(e.target)) close(false);
+      });
+    })();
   </script>
 </body>
 </html>
