@@ -8,7 +8,7 @@ No build step. Open any `.html` directly or serve with `npx serve .` / `python3 
 
 ## Architecture
 
-Multi-page static site for **UrbanView** (urbanview.media), an ERP for outdoor media (OOH). Pages: `index`, `produto`, `mercado`, `sobre`, `faq`, `termos-de-uso`, `politica-de-privacidade`, `404`, plus the static blog in `blog/`. Feeds and crawler files: `sitemap.xml`, `feed.xml`, `robots.txt`. All assets self-contained in `assets/`. Shared tokens and components live in `assets/brand.css`. See `DESIGN.md` for component patterns.
+Multi-page static site for **UrbanView** (urbanview.media), an ERP for outdoor media (OOH). Pages: `index`, `produto`, `mercado`, `materiais`, `sobre`, `faq`, `termos-de-uso`, `politica-de-privacidade`, `404`, plus the static blog in `blog/`. Feeds and crawler files: `sitemap.xml`, `feed.xml`, `robots.txt`. All assets self-contained in `assets/`. Shared tokens and components live in `assets/brand.css`. See `DESIGN.md` for component patterns.
 
 Product content derives from the knowledge base in `../urbanview-app/docs`. When a claim about the market or the product changes there, update it here too.
 
@@ -16,13 +16,29 @@ Product content derives from the knowledge base in `../urbanview-app/docs`. When
 
 Logo: `assets/urbanview.png` (`h-6 w-auto`, width=1305 height=160), links to `index.html`.
 
-Order: `[UrbanView]` | Produto | Mercado | Blog | Sobre | `[Solicitar demonstração]` (CTA).
+Order: `[UrbanView]` | Produto | Mercado | Blog | Materiais | Sobre | `[Solicitar demonstração]` (CTA).
 
 Pages inside `blog/` prefix every asset and page link with `../`, except links between blog pages.
 
 Active link: `text-sm font-medium style="color:#B35300;"` (see Acessibilidade). Inactive: `text-sm text-[#111111] hover:opacity-50 transition-opacity hidden md:block`.
 
-CTA links to `mailto:contato@urbanview.media?subject=UrbanView - Solicitar demonstração`, `bg-[#FF7902] text-[#000000] hover:bg-[#D96500]`.
+CTA do header: **"Agendar demonstração", e o destino é WhatsApp**, não `mailto`. O `mailto` abre um rascunho em branco e transfere a tarefa de escrever para o visitante, o que derruba o seguimento; o WhatsApp abre conversa com mensagem pronta. O e-mail continua disponível no CTA de fim de página e no rodapé.
+
+Estilo: `bg-[#FF7902] text-[#000000] hover:bg-[#D96500]`.
+
+### Rótulo de CTA por contexto
+
+Nunca repetir o mesmo rótulo em toda página. O header é fixo, o CTA de fim de página acompanha o assunto:
+
+| Página | CTA final |
+|---|---|
+| `index` | Agendar demonstração |
+| `produto` | Enviar minha planilha |
+| `mercado`, `materiais` | Agendar demonstração |
+| `sobre` | Falar com a equipe (e "Quero participar" no bloco de parceria) |
+| posts e `blog/index` | Ver com o meu inventário |
+
+A mensagem pré-preenchida do WhatsApp segue o mesmo contexto. Verbo: **"Agendar"**, não "Solicitar", que sugere fila e espera.
 
 Standalone site. **UrbanView is presented as its own brand**, never as a Setbox division: no Setbox pitch, no "quem constrói" section, no link to setbox.com.br. The only Setbox mention is the copyright line in the footer, because Setbox Serviços Digitais is the legal entity.
 
@@ -117,6 +133,38 @@ Regenerate derived assets from the branding folder with ImageMagick (`magick <or
 ## Image Rules
 
 - All `<img>` need `width`, `height` and `loading="lazy"`, except nav and footer logos (above the fold)
+
+## Materiais
+
+`materiais.html` oferece três PDFs gratuitos: calendário de bi-semanas, modelo de planilha de inventário e checklist de documentos do ponto.
+
+**Os arquivos não são hospedados aqui.** Ficam em `../urbanview-app/ebooks/`, e o visitante pede pelo WhatsApp com mensagem pré-preenchida por material. O pedido é o ponto: ele inicia uma conversa, que é o degrau intermediário do funil entre ler um post e pedir demonstração. Não há formulário, cadastro nem lista de e-mail, e a página diz isso ao visitante.
+
+Cada post do blog traz uma chamada para a página, antes do bloco "Continue lendo".
+
+Para regerar ou alterar um PDF, ver `../urbanview-app/ebooks/README.md`.
+
+## WhatsApp
+
+Contato principal ao lado do e-mail. Número: `5541999073688`, o mesmo do rodapé.
+
+| Onde | Componente |
+|---|---|
+| CTA final laranja, todas as páginas | `.btn-whatsapp-on-orange`, dentro de `.cta-dupla` |
+| `sobre.html`, bloco de parceria | `.btn-whatsapp` |
+| `materiais.html`, um por card | `.btn-whatsapp` |
+| Rodapé, coluna Contato | link simples abaixo do telefone |
+
+**Botão nomeia a ação, não o canal.** "Falar no WhatsApp" nos CTAs, "Pedir pelo WhatsApp" nos cards de material. Nunca só "WhatsApp": isso diz onde, e não o que acontece. A exceção é o rodapé, onde o link está numa lista de canais ao lado de e-mail e telefone, e ali o nome do canal é o rótulo certo.
+
+O hero da home tem **dois** CTAs, não três: "Solicitar demonstração" e "Ver o produto". Um terceiro botão de WhatsApp ali dividia a atenção sem acrescentar destino novo, já que o CTA do fim da página e o rodapé já oferecem o canal.
+
+Duas variantes por causa de contraste, e a distinção não é estética:
+
+- `.btn-whatsapp` usa verde **#0F7F42**, não o verde da marca WhatsApp (#25D366), que reprova com texto branco. Este dá 5,08:1
+- `.btn-whatsapp-on-orange` é **preto**: sobre o fundo #FF7902 o verde tem borda de 1,64:1, abaixo dos 3:1 que a WCAG 1.4.11 exige para componente de interface
+
+Todo link `wa.me` leva `target="_blank"`, `rel="noopener"` e mensagem pré-preenchida em `?text=`, **sem acento**, porque o encoding sofre em alguns clientes. Três mensagens: demonstração (site), saber mais (blog), exibidora parceira (`sobre.html`).
 
 ## Acessibilidade
 

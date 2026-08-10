@@ -149,6 +149,50 @@ html { scroll-behavior: smooth; }
 }
 .btn-on-dark:hover { background: var(--uv-laranja-hover); }
 
+/* WhatsApp */
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background: #0F7F42;
+  padding: 12px 24px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+.btn-whatsapp:hover { background: #0A6B35; }
+.btn-whatsapp svg { flex-shrink: 0; }
+
+/* Sobre fundo laranja o verde some: usa o preto da marca */
+.btn-whatsapp-on-orange {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background: var(--uv-preto);
+  padding: 12px 24px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+.btn-whatsapp-on-orange:hover { background: #2B2B2B; }
+.btn-whatsapp-on-orange svg { flex-shrink: 0; }
+
+.cta-dupla {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .cta-dupla { flex-direction: column; }
+  .cta-dupla a { width: 100%; justify-content: center; box-sizing: border-box; }
+}
+
 /* Ícone de card */
 .icon-box {
   width: 32px;
@@ -471,6 +515,11 @@ html { scroll-behavior: smooth; }
   font-size: 13px;
   line-height: 1.7;
   color: #555555;
+}
+
+@media (max-width: 767px) {
+  /* logo compacto: duas linhas, precisa de mais altura que a versão horizontal */
+  nav picture img, footer picture img { height: 34px; }
 }
 
 @media (max-width: 768px) {
